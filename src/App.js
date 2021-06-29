@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
+import NavHome from './component/NavHome'
+// import About from './component/About'
+import RouteFind  from './component/RouteFind';
 
 function App() {
+  const[isNavOpen, setIsNavOpen] = useState(false);
+
+  const navToggle = (e) => {
+    e.preventDefault()
+    setIsNavOpen(!isNavOpen)
+    // console.log('clicked')
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavHome navToggle={navToggle} isNavOpen={isNavOpen} />
+      <RouteFind />
+      
     </div>
   );
 }
