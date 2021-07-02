@@ -7,11 +7,12 @@
   /* font-size: 25px; */
   width: 100%;
   min-height: 100%;
-  font-family: "cursive", "Georgia", "Times New Roman", "Times", "serif";
+  font-family: "Calibre", "Georgia", "Times New Roman", "Times", "serif";
   /* line-height: 1.3; */
   background-color: #f0f2f5;
   color: #262a2e;
   margin: 0px;
+  overflow-x: hidden;
 }
 .profileAbout {
   margin: 0 auto;
@@ -196,7 +197,7 @@ footer {
 }
 
 .builtProject {
-  margin-left: 20%;
+  margin-left: 5%;
 }
 
 /* Tablet-reponsive design */
