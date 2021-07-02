@@ -2,23 +2,25 @@ import { AiFillLinkedin,AiOutlineGithub, AiOutlineMail} from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import AnimateText from './AnimateText'
-import Contact from './Contact'
+// import Contact from './Contact'
 import BuiltRecently from './BuiltRecent'
 // import {Route,Switch} from 'react-router-dom'
 
 const About = () => {
     return ( 
-    <div>
+    <div >
                 {/* Into about me  */}
-        <main>
+        <main >
             <section className="about">
                 <div className="about1">
-                    <h5>Hi, I'm Godwin Amadi</h5>
+                    <h5 className="big-heading">Hi, I'm Godwin Amadi</h5>
+                    <h4 className="big-heading">Web Developer</h4>
                     <span>
-                        <h4 style={{marginLeft:'50px'}}>Web Developer</h4>
                          < AnimateText />
                     </span>
-                    <IconContext.Provider value={{ className: 'iconSize' }}>
+                </div>
+                <div className="img1">
+                      <IconContext.Provider value={{ className: 'iconSize' }}>
                     <div className="socials">
                         <a className="socialIcon" href='/' alt='linkedin' target='_blank'>< AiFillLinkedin /></a>
                         <a className="socialIcon" href='/' alt='github' target='_blank'>< AiOutlineGithub /></a>
@@ -26,8 +28,6 @@ const About = () => {
                         <a className="socialIcon" href='/' alt='gmail' target='_blank'>< AiOutlineMail /></a>
                     </div>
                     </IconContext.Provider>
-                </div>
-                <div className="img1">
                      <img className="circular-image" 
                         src="https://ltkdigital.com/img/avatar.svg" 
                         alt="godwin-amadi"/>
@@ -80,8 +80,8 @@ const About = () => {
                 {/* <Switch>
                 <Route exact path="/contact" component={Contact}></Route>
                 </Switch> */}
-                {/* < BuiltRecently /> */}
-                < Contact />
+                < BuiltRecently />
+                {/* < Contact /> */}
                 
     </div>
      );

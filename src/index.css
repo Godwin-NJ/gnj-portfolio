@@ -2,38 +2,55 @@
   padding: 0;
   margin: 0;
 }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-}
 
 .App {
-  margin: 1%;
-  /* padding: 2%; */
+  /* font-size: 25px; */
+  width: 100%;
+  min-height: 100%;
+  font-family: "cursive", "Georgia", "Times New Roman", "Times", "serif";
+  /* line-height: 1.3; */
+  background-color: #f0f2f5;
+  color: #262a2e;
+  margin: 0px;
 }
+.profileAbout {
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .navbar-brand {
   text-decoration: none;
 }
 .nav {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 .navClosure {
   color: white !important;
   background-color: #46acc2;
   /* padding: 1%; */
-  font-family: roboto;
   width: 100%;
-  z-index: 12;
+  /* position: fixed; */
+  /* overflow: hidden; */
+  position: fixed;
   top: 0;
+  z-index: 999;
   left: 0;
+}
+.img1 {
+  margin-top: 30px;
 }
 
 .icon {
   align-self: flex-end;
   position: absolute;
   cursor: pointer;
+  font-size: 20px;
+}
+.hamburgerIcon:before {
+  font-size: 5px;
+  /* height: 20px; */
 }
 
 .navInfo {
@@ -43,6 +60,7 @@ body {
 .navAnker {
   text-decoration: none;
   color: white;
+  font-size: 20px;
 }
 .showNav {
   display: none;
@@ -53,15 +71,19 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  margin-top: 4%;
+  margin-top: -12%;
+  margin-left: 40%;
 }
-/* .circular-image1 {
-} */
+.big-heading {
+  font-size: 27px;
+}
 
 .about {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-left: 2%;
+  flex-direction: column;
+  /* margin-top: 5%; */
 }
 .about1 {
   margin-top: 5%;
@@ -72,8 +94,8 @@ body {
 }
 .socials {
   display: flex;
-  /* margin: auto; */
-  margin-top: 2%;
+  flex-direction: column;
+  margin-left: 5%;
 }
 .socialIcon {
   color: black;
@@ -101,7 +123,7 @@ ul {
 }
 .skill {
   text-align: center;
-  margin-top: 2%;
+  margin-top: -8%;
   position: relative;
 }
 .skill ul.skillIcon2 li::before {
@@ -118,11 +140,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, minmax(140px, 200px));
   margin-left: 5%;
-  /* flex-flow: row wrap;
-  justify-content: space-around;
-  order: 3; */
-  /* width: 50%; */
-  /* cursor: pointer; */
 }
 .skillIcon2 li > p {
   /* border: 1px solid grey; */
@@ -131,32 +148,27 @@ ul {
   /* border-radius: 20px; */
 }
 .skillIcon2 > li {
-  /* width: 10%; */
   margin-bottom: -10px;
   padding: 5px;
-  /* align-self: center;
-  justify-items: center; */
-  /* padding-left: 30px; */
-  /* margin-right: 10px; */
-  /* padding-top: 3%; */
 }
 .cardProject {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 50px;
 }
 .card {
   margin: 2% auto;
 }
+.iconProject > a {
+  margin-left: 20px;
+  font-size: 25px;
+  color: black;
+}
 .animateText {
-  font-family: sans-serif;
-  font-weight: 100;
-  /* font-size: 20px; */
+  font-weight: 70;
   text-align: center;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* min-height: 100vh; */
   width: 300px;
   margin-left: -10px;
   margin-top: -10px;
@@ -180,6 +192,11 @@ ul {
 footer {
   background-color: #262a2e;
   color: #f0f2f5;
+  width: 100%;
+}
+
+.builtProject {
+  margin-left: 20%;
 }
 
 /* Tablet-reponsive design */

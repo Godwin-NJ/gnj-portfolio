@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import {Link} from 'react-router-dom'
+import { Cross as Hamburger } from 'hamburger-react'
 
 const NavHome = ({navToggle, isNavOpen}) => {
     return ( 
@@ -9,7 +10,7 @@ const NavHome = ({navToggle, isNavOpen}) => {
                 <div><Link className="navAnker navbar-brand" to="/">GNJ</Link></div>
                 <button className='icon' 
                  onClick={navToggle}>
-                <a href="/"><AiOutlineAlignLeft /></a>
+                <a href="/"><AiOutlineAlignLeft style={{color:"black"}}/></a>
                 </button>
                 <div>
                     <nav className={`navInfo ${ isNavOpen ?'' : 'showNav'}`}>

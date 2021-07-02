@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import NavHome from './component/NavHome'
-// import About from './component/About'
 import RouteFind  from './component/RouteFind';
+import Contact from '../src/component/Contact'
 
 function App() {
   const[isNavOpen, setIsNavOpen] = useState(false);
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <NavHome navToggle={navToggle} isNavOpen={isNavOpen} />
       <RouteFind />
-      
+      < Contact />
     </div>
   );
 }
