@@ -8,8 +8,7 @@ const NavHome = ({navToggle, isNavOpen}) => {
         <div className="navClosure">
             <nav className="nav">
                 <div><Link className="navAnker navbar-brand" to="/">GNJ</Link></div>
-                <button className='icon' 
-                 onClick={navToggle}>
+                <button className='icon' onClick={navToggle}>
                 <a href="/"><AiOutlineAlignLeft style={{color:"black"}}/></a>
                 </button>
                 <div>
