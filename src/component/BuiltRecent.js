@@ -5,7 +5,7 @@ const Built = () => {
     return ( 
         <div className="cardLayout">
              <h5>Some things I've built recently</h5>
-             <div style={{overflow:"scroll", height:"400px"}}>
+             <div style={{overflowY:"scroll",border:'1px solid black', height:"500px",padding:"5px"}}>
             <ul className="project-grid" >
                 {/* project one  */}
                 <li className="cardBuilt">

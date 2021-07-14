@@ -155,12 +155,16 @@ ul {
 }
 
 .cardBuilt {
-  width: 85vw;
+  width: 75vw;
   height: 50%;
   border: 1px solid black;
   margin: 5px 0px 15px 0px;
+  /* transition: all 0.2s ease-in-out; */
   /* align-items: center; */
 }
+/* .cardBuilt:hover {
+  transform: scale(1.5);
+} */
 .cardLayout {
   /* width: 100%; */
   display: flex;
