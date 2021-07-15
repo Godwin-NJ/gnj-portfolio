@@ -33,7 +33,7 @@ const Built = () => {
                              <a href="https://godwin-nj.github.io/sci-calculator/" target="_blank" rel="noreferrer">
                             <AiOutlineLink /> 
                             </a>
-                            <a href="#" target="_blank" rel="noreferrer">
+                            <a href="/#" target="_blank" rel="noreferrer">
                             <AiOutlineFolder /> 
                             </a>
                         </div>

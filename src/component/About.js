@@ -71,6 +71,7 @@ const About = () => {
                         <li> CSS </li>
                         <li>Ms Dynamics</li>
                         <li> Wordpress </li>
+                        <li> ERP </li>
                         
                     </ul>
                 </div>

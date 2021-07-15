@@ -5,6 +5,7 @@ import Contact from '../src/component/Contact'
 
 function App() {
   const[isNavOpen, setIsNavOpen] = useState(false);
+  const[isUserAuthenticated,setIsUserAuthenticated] = useState(true)
 
   const navToggle = (e) => {
     e.preventDefault()
@@ -16,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <NavHome navToggle={navToggle} isNavOpen={isNavOpen} />
-      <RouteFind />
+      <RouteFind isUserAuthenticated={isUserAuthenticated}/>
       < Contact />
     </div>
   );
