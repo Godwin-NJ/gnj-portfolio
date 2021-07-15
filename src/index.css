@@ -159,12 +159,16 @@ ul {
   height: 50%;
   border: 1px solid black;
   margin: 5px 0px 15px 0px;
-  /* transition: all 0.2s ease-in-out; */
+  transition: 0.25s ease-out;
   /* align-items: center; */
 }
-/* .cardBuilt:hover {
-  transform: scale(1.5);
-} */
+.cardBuilt:hover {
+  transform: scale(1.1);
+  width: 70vw;
+  height: 40%;
+  margin: 50px 0px 50px 10px;
+}
+
 .cardLayout {
   /* width: 100%; */
   display: flex;
@@ -255,6 +259,12 @@ footer {
     margin: 5px 0px 15px 0px;
     /* align-items: center; */
   }
+  .cardBuilt:hover {
+    transform: scale(1.1);
+    width: 40vw;
+    height: 58vh;
+    margin: 20px 0px 20px 10px;
+  }
   .cardContent {
     margin-left: 10px;
   }
@@ -291,8 +301,14 @@ footer {
     row-gap: 10px;
   }
   .cardBuilt {
-    width: 30vw;
-    height: 58vh;
+    width: 27vw;
+    height: 60vh;
+  }
+  .cardBuilt:hover {
+    transform: scale(1.1);
+    width: 28vw;
+    height: 60vh;
+    margin: 20px 20px 20px 10px;
   }
   .cardProject {
     margin-top: 8%;
@@ -300,7 +316,23 @@ footer {
   .profileAbout {
     width: 60vw;
   }
+  .houseDiv {
+    width: 90vw;
+  }
 }
 
 @media (min-width: 1200px) {
+  .cardBuilt:hover {
+    /* transform: scale(1.1); */
+    width: 23vw;
+    height: 54vh;
+    margin: 20px 20px 50px 30px;
+  }
+  .cardBuilt {
+    width: 25vw;
+    height: 54vh;
+  }
+  .houseDiv {
+    width: 80vw;
+  }
 }
