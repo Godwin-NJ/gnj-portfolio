@@ -302,12 +302,12 @@ footer {
   }
   .cardBuilt {
     width: 27vw;
-    height: 60vh;
+    height: 70vh;
   }
   .cardBuilt:hover {
     transform: scale(1.1);
     width: 28vw;
-    height: 60vh;
+    height: 70vh;
     margin: 20px 20px 20px 10px;
   }
   .cardProject {
@@ -325,12 +325,12 @@ footer {
   .cardBuilt:hover {
     /* transform: scale(1.1); */
     width: 23vw;
-    height: 54vh;
+    height: 70vh;
     margin: 20px 20px 50px 30px;
   }
   .cardBuilt {
     width: 25vw;
-    height: 54vh;
+    height: 65vh;
   }
   .houseDiv {
     width: 80vw;
