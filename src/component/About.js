@@ -5,6 +5,7 @@ import AnimateText from './AnimateText'
 // import Contact from './Contact'
 import BuiltRecently from './BuiltRecent'
 // import {Route,Switch} from 'react-router-dom'
+import gnjImage from '../images/gnj-pic.jpg'
 
 const About = () => {
     return ( 
@@ -29,7 +30,8 @@ const About = () => {
                     </div>
                     </IconContext.Provider>
                      <img className="circular-image" 
-                        src="https://ltkdigital.com/img/avatar.svg" 
+                        // src="https://ltkdigital.com/img/avatar.svg" 
+                        src={gnjImage}
                         alt="godwin-amadi"/>
                 </div>
             </section>

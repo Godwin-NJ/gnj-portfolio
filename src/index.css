@@ -70,11 +70,11 @@
 .circular-image {
   display: block;
   margin: auto;
-  height: 200px;
-  width: 200px;
+  height: 230px;
+  width: 230px;
   border-radius: 50%;
-  margin-top: -12%;
-  margin-left: 40%;
+  margin-top: -27%;
+  margin-left: 20%;
 }
 .big-heading {
   font-size: 27px;
@@ -278,6 +278,41 @@ footer {
   .profileAbout {
     width: 80vw;
   }
+  .circular-image {
+    margin-top: -18%;
+    margin-left: 18%;
+}
+}
+@media (min-width: 950px) {
+  .circular-image {
+    margin-top: -15%;
+    /* margin-left: 18%; */
+}
+}
+
+@media (min-width: 903px) {
+  .circular-image {
+    margin-top: -15%;
+    /* margin-left: 18%; */
+}
+}
+@media (min-width: 625px) {
+  .circular-image {
+    margin-top: -13%;
+    /* margin-left: 18%; */
+}
+}
+@media (min-width: 655px) {
+  .circular-image {
+    margin-top: -16%;
+    /* margin-left: 18%; */
+}
+}
+@media (min-width: 597px) {
+  .circular-image {
+    margin-top: -12%
+    /* margin-left: 18%; */
+}
 }
 
 /* Mini large Screen @ 992px */
@@ -319,6 +354,10 @@ footer {
   .houseDiv {
     width: 90vw;
   }
+  .circular-image {
+    margin-top: -13%;
+    margin-left: 18%;
+}
 }
 
 @media (min-width: 1200px) {
@@ -335,4 +374,8 @@ footer {
   .houseDiv {
     width: 80vw;
   }
+  .circular-image {
+    margin-top: -10%;
+    margin-left: 18%;
+}
 }
