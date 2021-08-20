@@ -7,7 +7,7 @@ const NavHome = ({navToggle, isNavOpen}) => {
     return ( 
         <div className="navClosure">
             <header className="nav">
-                <div><Link className="navAnker navbar-brand" to="/about">GNJ</Link></div>
+                <div><Link className="navGNJ navAnker navbar-brand" to="/about">GNJ</Link></div>
                 <button className='icon' onClick={navToggle}>
                 <a href="/"><AiOutlineAlignLeft style={{color:"black"}}/></a>
                 </button>

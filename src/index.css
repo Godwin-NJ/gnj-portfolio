@@ -2,18 +2,20 @@
   padding: 0;
   margin: 0;
 }
-
-.App {
-  /* font-size: 25px; */
+body{
   width: 100%;
   min-height: 100%;
   font-family: "Calibre", "Georgia", "Times New Roman", "Times", "serif";
-  /* line-height: 1.3; */
   background-color: #f0f2f5;
   color: #262a2e;
   margin: 0px;
+  line-height: 1.3;
+  font-size: 20px;
   overflow-x: hidden;
 }
+
+/* .App {
+} */
 
 .profileAbout {
   /* margin: 0 auto; */
@@ -41,7 +43,8 @@
   left: 0;
 }
 .img1 {
-  margin-top: 30px;
+  margin-top: 2%;
+  display: flex;
 }
 
 .icon {
@@ -63,21 +66,37 @@
   text-decoration: none;
   color: white;
   font-size: 20px;
+  padding: 5px;
+}
+.navAnker:hover {
+  background-color: #247f88;
 }
 .showNav {
   display: none;
 }
 .circular-image {
-  display: block;
-  margin: auto;
-  height: 230px;
-  width: 230px;
-  border-radius: 50%;
-  margin-top: -27%;
-  margin-left: 20%;
+   /* display: block; */
+    /* margin: auto; */
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    /* margin-top: 1%; */
+    margin-left: 10%;
 }
 .big-heading {
   font-size: 27px;
+  margin-top: 15%;
+  /* margin-top: 10%; */
+}
+.btnProject{
+  margin-top:2%;
+  text-decoration: none;
+  color:black;
+  border:1px solid black;
+  padding: 5px;
+  border-radius: 25%;
+  background-color: rgb(59, 52, 42);
+  color: #f0f2f5;
 }
 
 .about {
@@ -92,12 +111,13 @@
   /* flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between; */
-  max-width: 50%;
+  max-width: 70%;
 }
 .socials {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
+  margin-top: 10%;
 }
 .socialIcon {
   color: black;
@@ -119,14 +139,14 @@ ul {
 }
 .iconFlex {
   position: relative;
-  width: 80%;
-  margin: 0px auto;
-  margin-top: -25px;
 }
 .skill {
-  text-align: center;
-  margin-top: -8%;
+  /* text-align: center; */
+  /* margin-top: -8%; */
   position: relative;
+}
+.skill > h4{
+  margin-left: 3%;
 }
 .skill ul.skillIcon2 li::before {
   content: "▹";
@@ -157,9 +177,12 @@ ul {
 .cardBuilt {
   width: 75vw;
   height: 50%;
-  border: 1px solid black;
+  border: 1px solid transparent;
   margin: 5px 0px 15px 0px;
   transition: 0.25s ease-out;
+  border-radius: 30px;
+  color: #000000;
+  background-color: #b1d5e4;
   /* align-items: center; */
 }
 .cardBuilt:hover {
@@ -225,6 +248,12 @@ ul {
   font-size: 20px;
   margin: 0 auto;
 }
+.footerIcon a {
+  text-decoration: none;
+  color: inherit;
+  font-size: x-large;
+  padding: 10px;
+}
 .footerStyle {
   text-align: center;
 }
@@ -236,6 +265,8 @@ footer {
   background-color: #262a2e;
   color: #f0f2f5;
   width: 100%;
+  position: absolute;
+  margin-top: 10%;
 }
 
 /* Tablet-reponsive design */
@@ -255,7 +286,7 @@ footer {
   .cardBuilt {
     width: 40vw;
     height: 58vh;
-    border: 1px solid black;
+    border: 1px solid transparent;
     margin: 5px 0px 15px 0px;
     /* align-items: center; */
   }
@@ -276,58 +307,63 @@ footer {
     row-gap: 15px;
   }
   .profileAbout {
-    width: 80vw;
+    width: 80%;
+    margin-left: 2.5%;;
   }
   .circular-image {
-    margin-top: -18%;
-    margin-left: 18%;
+    margin-top: 5%;
 }
+.about{
+  margin-left: 5%;
 }
-@media (min-width: 950px) {
-  .circular-image {
-    margin-top: -15%;
-    /* margin-left: 18%; */
+.navGNJ{
+  margin-left: 3%;
+}
+.skill{
+  margin-left: 2%;
 }
 }
 
-@media (min-width: 903px) {
-  .circular-image {
+@media (min-width: 625px){
+  .big-heading{
+    margin-top: 10%;
+  }
+}
+
+
+@media (min-width: 950px) {
+  /* .circular-image {
     margin-top: -15%;
-    /* margin-left: 18%; */
+} */
 }
+/* @media (min-width:320px){
+  .big-heading{
+    margin-top: 15%;
+  }
+} */
+
+@media (min-width: 722px) {
+  .about1{
+    max-width: 65%;
+  }
 }
-@media (min-width: 625px) {
-  .circular-image {
-    margin-top: -13%;
-    /* margin-left: 18%; */
+
+/* to make horizontal scroll enabled for small devices */
+@media (max-width: 600px) {
+  .App{
+      overflow-x: auto;
+  }
+ }
+
+@media (min-width: 849px) {
+  .about1{
+    max-width: 55%;
+  }
 }
-}
-@media (min-width: 655px) {
-  .circular-image {
-    margin-top: -16%;
-    /* margin-left: 18%; */
-}
-}
-@media (min-width: 597px) {
-  .circular-image {
-    margin-top: -12%
-    /* margin-left: 18%; */
-}
-}
+
 
 /* Mini large Screen @ 992px */
 @media (min-width: 992px) {
-  .skill {
-    margin-top: -3%;
-    margin-left: 40px;
-    position: relative;
-  }
-  .skill > h4 {
-    margin-left: -75vw;
-  }
-  .skillIcon2 {
-    margin-left: -10.5vw;
-  }
   .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -337,12 +373,12 @@ footer {
   }
   .cardBuilt {
     width: 27vw;
-    height: 70vh;
+    height: 62vh;
   }
   .cardBuilt:hover {
     transform: scale(1.1);
     width: 28vw;
-    height: 70vh;
+    height: 62vh;
     margin: 20px 20px 20px 10px;
   }
   .cardProject {
@@ -354,28 +390,47 @@ footer {
   .houseDiv {
     width: 90vw;
   }
-  .circular-image {
+  /* .circular-image {
     margin-top: -13%;
     margin-left: 18%;
-}
+} */
 }
 
 @media (min-width: 1200px) {
   .cardBuilt:hover {
     /* transform: scale(1.1); */
     width: 23vw;
-    height: 70vh;
+    height: 60vh;
     margin: 20px 20px 50px 30px;
   }
   .cardBuilt {
     width: 25vw;
-    height: 65vh;
+    height: 60vh;
   }
   .houseDiv {
     width: 80vw;
   }
+  .about1 {
+    max-width: 40%;
+}
+.img1{
+  margin-top: -5%;
+}
   .circular-image {
-    margin-top: -10%;
-    margin-left: 18%;
+    margin-top: 7%;
+    margin-left: 5%;
 }
+.about{
+  margin-left: 10%;
 }
+.profileAbout{
+  margin-left: 10%;
+}
+.skill{
+  margin-left: 10%;
+}
+
+}
+
+
+

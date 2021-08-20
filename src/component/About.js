@@ -1,7 +1,7 @@
 import { AiFillLinkedin,AiOutlineGithub, AiOutlineMail} from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import AnimateText from './AnimateText'
+// import AnimateText from './AnimateText'
 // import Contact from './Contact'
 import BuiltRecently from './BuiltRecent'
 // import {Route,Switch} from 'react-router-dom'
@@ -15,18 +15,43 @@ const About = () => {
             <section className="about">
                 <div className="about1">
                     <h5 className="big-heading">Hi, I'm Godwin Amadi</h5>
-                    <h4 className="big-heading">Web Developer</h4>
-                    <span>
-                         < AnimateText />
+                    {/* <h4 className="big-heading" style={{color:'#6e7557'}}>Web Developer</h4> */}
+                    <span className="aboutDetails">
+                         {/* < AnimateText /> */}
+                         <p style={{fontSize:'170%', color:'#87867e'}}>I build solutions for the Web and provide enterprise solutions to businesses.</p>
+                         <p>
+                             I'm a web developer focused on building web applications that are User experience 
+                             focused. Currently I provide Enterprise / Database management 
+                             for Ba Nigeria distribution.
+                         </p>
                     </span>
                 </div>
                 <div className="img1">
                       <IconContext.Provider value={{ className: 'iconSize' }}>
                     <div className="socials">
-                        <a className="socialIcon" href='/' alt='linkedin' target='_blank'>< AiFillLinkedin /></a>
-                        <a className="socialIcon" href='/' alt='github' target='_blank'>< AiOutlineGithub /></a>
-                        <a className="socialIcon" href='/' alt='twitter' target='_blank'>< FaTwitter /></a>
-                        <a className="socialIcon" href='/' alt='gmail' target='_blank'>< AiOutlineMail /></a>
+                        <a className="socialIcon" href='https://www.linkedin.com/in/amadigodwin7/' 
+                            alt='linkedin' 
+                            target='_blank' 
+                            rel="noreferrer">
+                            < AiFillLinkedin />
+                        </a>
+                        <a className="socialIcon" href='https://github.com/Godwin-NJ' alt='github' 
+                            target='_blank' 
+                            rel="noreferrer">
+                            < AiOutlineGithub />
+                        </a>
+                        <a className="socialIcon" href='http://twitter.com/godwin_nj' alt='twitter' 
+                            target='_blank' 
+                            rel="noreferrer">
+                            < FaTwitter />
+                        </a>
+                        <a className="socialIcon" 
+                            href='https://mail.google.com/mail/u/0/?fs=1&to=amadigodwin7@gmail.com&su=SUBJECT&body=BODY&tf=cm' 
+                            alt='gmail' 
+                            target='_blank' 
+                            rel="noreferrer">
+                            < AiOutlineMail />
+                        </a>
                     </div>
                     </IconContext.Provider>
                      <img className="circular-image" 
@@ -62,11 +87,11 @@ const About = () => {
 
              {/* skill section */}
             <section className="skill" >
-                <h4>Skills || Technologies </h4>
+              <h4>Skills || Technologies </h4>
                 <IconContext.Provider value={{ className: 'skillIcon' }}>
                 <div className="iconFlex">
                     <ul className="skillIcon2">
-                        <li > JavaScript (ES6+) </li>
+                        <li > JavaScript(ES6+) </li>
                         <li>React JS </li>
                         <li>GIT </li>
                         <li> Node JS </li>
@@ -74,6 +99,7 @@ const About = () => {
                         <li>Ms Dynamics</li>
                         <li> Wordpress </li>
                         <li> ERP </li>
+                        <li> Azuri </li>
                         
                     </ul>
                 </div>

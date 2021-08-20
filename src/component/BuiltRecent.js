@@ -1,5 +1,6 @@
 // import {  Card, CardText,CardTitle,CardActions} from 'react-mdl';
 import { AiFillGithub,AiOutlineLink,AiOutlineFolder } from "react-icons/ai";
+import {Link} from 'react-router-dom'
 
 const Built = () => {
     return ( 
@@ -137,7 +138,8 @@ const Built = () => {
                 
             </ul>
             </div>
-            <button>See More</button>
+            {/* <button style={{marginTop:'5%'}} >See More</button> */}
+            <Link className="btnProject" to='/projects'>See More</Link>
         </div>
      );
 }
