@@ -18,7 +18,7 @@ const About = () => {
                     {/* <h4 className="big-heading" style={{color:'#6e7557'}}>Web Developer</h4> */}
                     <span className="aboutDetails">
                          {/* < AnimateText /> */}
-                         <p style={{fontSize:'170%', color:'#87867e'}}>I build solutions for the Web and provide enterprise solutions to businesses.</p>
+                         <p style={{fontSize:'150%', color:'#87867e',lineHeight:'1.5'}}>I build solutions for the Web and provide enterprise solutions to businesses.</p>
                          <p>
                              I'm a web developer focused on building web applications that are User experience 
                              focused. Currently I provide Enterprise / Database management 
