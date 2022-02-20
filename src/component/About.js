@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div>
       {/* Into about me  */}
-      <main>
+      <main className="aboutHeader">
         <section className="about">
           <div className="about1">
             <h4 className="big-heading">Hi, I'm Godwin Amadi</h4>
@@ -76,20 +76,20 @@ const About = () => {
         <section className="profileAbout">
           <h4>About Me</h4>
           <p>
-            I am web developer passionate about providing solutions for things
+            I am a web developer passionate about providing solutions for things
             that live on the internet. My interest in software devlopment was
             innate due to my interest in developing dynamic solutions for people
             without constrain of environment
           </p>
           <p>
-            I love providing web solutions through learning consistently,
-            solving problems and building web apps/sites. I'm very adaptable to
-            new technology, a good communicator and a team player.
+            I am Proficient in the use of <b>Javascript</b>,<b>CSS</b>,
+            <b>Node-JS</b>,<b>React JS</b>,<i>SQL</i> comprising of relational
+            and non relational database. I'm very adaptable to new technology, a
+            good communicator and a team player.
           </p>
           <p>
-            My focus these days is providing database administraor support,
-            building accessible and inclusive products with user experinece
-            focus for businesses.
+            I currently build and provide technical support to BA Nigeria
+            Distribution
           </p>
         </section>
 

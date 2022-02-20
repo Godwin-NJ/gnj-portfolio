@@ -16,9 +16,9 @@ const Project = () => {
                   A simple Digital Calculator .<br />
                 </p>
                 <ul className="tech-list">
-                  <li>React-JS</li>
-                  <li>JS</li>
-                  <li>CSS</li>
+                  <li className="techList-li">React-JS</li>
+                  <li className="techList-li">JS</li>
+                  <li className="techList-li">CSS</li>
                 </ul>
               </div>
 
@@ -54,9 +54,9 @@ const Project = () => {
                   <p>Fetching Robo-Friends API with Fetch API + UI</p>
 
                   <ul className="tech-list">
-                    <li>React-JS</li>
-                    <li>API</li>
-                    <li>CSS</li>
+                    <li className="techList-li">React-JS</li>
+                    <li className="techList-li">API</li>
+                    <li className="techList-li">CSS</li>
                   </ul>
                 </div>
                 <div className="cardIcon">
@@ -88,10 +88,10 @@ const Project = () => {
                   <p>Web App using A.I to detect the face position of images</p>
 
                   <ul className="tech-list">
-                    <li>React-JS</li>
-                    <li>Node-JS</li>
-                    <li>Postgres SQL</li>
-                    <li>Heroku</li>
+                    <li className="techList-li">React-JS</li>
+                    <li className="techList-li">Node-JS</li>
+                    <li className="techList-li">Postgres SQL</li>
+                    <li className="techList-li">Heroku</li>
                   </ul>
                 </div>
                 <div className="cardIcon">
