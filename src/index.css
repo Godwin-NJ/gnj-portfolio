@@ -29,7 +29,6 @@ body {
 h4 {
   color: #552ea1;
   font-size: 20px;
-  /* letter-spacing: 2px; */
 }
 h6 {
   color: black;
@@ -49,16 +48,11 @@ h5 {
 }
 
 .prjtDesc {
-  /* background-color: #000000; */
   color: black;
   border-radius: 10px;
   padding: 5px;
 }
 
-.profileAbout {
-  /* margin: 0 auto; */
-  /* padding: 20px; */
-}
 main.relativeToNav {
   position: relative;
   min-height: 5vh;
@@ -109,7 +103,6 @@ main.relativeToNav {
 }
 .hamburgerIcon:before {
   font-size: 5px;
-  /* height: 20px; */
 }
 
 .navInfo {
@@ -134,12 +127,9 @@ main.relativeToNav {
 }
 
 .circular-image {
-  /* display: block; */
-  /* margin: auto; */
   height: 230px;
   width: 230px;
   border-radius: 25%;
-  /* margin-top: 1%; */
   margin-left: 10%;
 }
 
@@ -158,29 +148,14 @@ main.relativeToNav {
 
 .about {
   display: flex;
-  /* justify-content: space-between; */
-  /* margin-left: 2%; */
   flex-direction: column;
   margin-top: 5%;
 }
-/* .about1 {
-  margin-top: 5%;
-  max-width: 70%;
-} */
-
-/* .socials {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5%;
-  margin-top: 10%;
-} */
 
 .iconSize {
   font-size: 2rem;
   display: flex;
   flex-direction: row;
-  /* margin-left: 5%; */
-  /* margin-top: 10%; */
 }
 
 .socialIcon {
@@ -196,20 +171,11 @@ main.relativeToNav {
 ul {
   list-style: none;
   text-align: left;
-  /* width: 40%; */
-  /* position: relative; */
 }
 .iconFlex {
   position: relative;
 }
-.skill {
-  /* text-align: center; */
-  /* margin-top: -8%; */
-  /* position: relative; */
-}
-.skill > h4 {
-  /* margin-left: 3%; */
-}
+
 .skill ul.skillIcon2 li::before {
   content: "▹";
   position: relative;
@@ -217,8 +183,6 @@ ul {
   font-size: large;
   left: -8px;
   bottom: -3px;
-  /* padding-left: -4px; */
-  /* line-height: 12px; */
 }
 .skillIcon2 {
   display: grid;
@@ -226,10 +190,7 @@ ul {
   margin-left: 5%;
 }
 .skillIcon2 li > p {
-  /* border: 1px solid grey; */
   position: absolute;
-  /* width: 20%; */
-  /* border-radius: 20px; */
 }
 .skillIcon2 > li {
   margin-bottom: -10px;
@@ -247,23 +208,13 @@ ul {
   border-radius: 30px;
   color: #000000;
   background-color: #e7e9eb;
-  /* align-items: center; */
 }
 .cardBuilt:hover {
   transform: scale(1.1);
-  /* width: 30px; */
-  /* height: 40%; */
+
   margin: 20px 0px 20px 0px;
 }
 
-/* .cardLayout {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-/* new  end*/
 .cardLayout {
   /* width: 100%; */
   display: flex;
@@ -280,15 +231,11 @@ ul {
 }
 .tech-list {
   display: flex;
-  /* margin: 3px; */
-  /* margin: 10px 0px; */
 }
 .tech-list li {
   margin: 0px 10px 5px 0px;
 }
-/* .cardContent {
-  margin-left: 20px;
-} */
+
 .cardIcon {
   margin-bottom: 15px;
 }
@@ -300,14 +247,7 @@ ul {
 .cardProject {
   margin-top: 12%;
 }
-/* .card {
-  margin: 2% auto;
-} */
-/* .iconProject > a {
-  margin-left: 20px;
-  font-size: 25px;
-  color: black;
-} */
+
 .animateText {
   font-weight: 70;
   display: flex;
@@ -320,6 +260,9 @@ ul {
   margin-top: 10%;
   padding-bottom: 20.5rem;
 }
+/* .prjtTempt {
+  margin: 5%;
+} */
 
 .footerIcon {
   display: flex;
@@ -349,20 +292,12 @@ footer {
   position: absolute;
   left: 0px;
   margin-top: 20%;
-  height: 20vh;
-  /* padding: 10px; */
 }
 
 /* to make horizontal scroll enabled for small devices */
 @media (max-width: 600px) {
   .App {
     overflow-x: auto;
-  }
-}
-
-@media (min-width: 625px) {
-  .big-heading {
-    /* margin-top: 10%; */
   }
 }
 
@@ -386,59 +321,46 @@ footer {
     display: none;
   }
   .navAnker {
-    /* padding: 8px 5px 2px 10px; */
     margin-top: -28px;
   }
-  /* .cardBuilt {
-    width: 25rem;
-    height: 100%;
-    border: 1px solid transparent;
-    margin: 5px 0px 15px 0px;
-    align-items: center;
-  } */
+
   .cardBuilt:hover {
-    /* transform: scale(1.1); */
     width: 320px;
     height: 60%;
     margin: 10px 0px 0px 10px;
   }
-  /* .cardContent {
-    margin-left: 10px;
-  } */
+
   .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: auto; */
+
     column-gap: 10px;
     row-gap: 10px;
   }
   .profileAbout {
     width: 85%;
-    /* margin-left: 2.5%; */
   }
 
   .about {
     margin-top: 7%;
   }
   .navbar-brand {
-    /* text-decoration: none; */
     margin: -1px;
   }
-  /* .navGNJ {
-    margin-left: 3%;
-  } */
-  .skill {
-    /* margin-left: 2%; */
+}
+
+@media (min-width: 840px) {
+  .cardLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0%;
+  }
+  .cardBuilt:hover {
+    transform: scale(1.1);
+    height: 100%;
   }
 }
 
-@media (min-width: 849px) {
-  .about1 {
-    max-width: 55%;
-  }
-}
-
-/* Mini large Screen @ 992px */
 @media (min-width: 992px) {
   .project-grid {
     display: grid;
@@ -449,18 +371,9 @@ footer {
     grid-row-gap: 10px;
     row-gap: 10px;
   }
-  /* .cardBuilt {
-    width: 27vw;
-    height: 62vh;
-  } */
-  /* .cardBuilt:hover {
-    transform: scale(1.1);
-    width: 28vw;
-    height: 62vh;
-    margin: 20px 20px 20px 10px;
-  } */
+
   .cardProject {
-    margin-top: 8%;
+    margin-top: 5%;
   }
   .profileAbout {
     width: 60vw;
@@ -468,22 +381,16 @@ footer {
   .houseDiv {
     width: 90vw;
   }
-  /* .circular-image {
-    margin-top: -13%;
-    margin-left: 18%;
-} */
 }
 
 @media (min-width: 1200px) {
   .cardBuilt:hover {
-    /* transform: scale(1.1); */
     width: 450px;
     height: 35vh;
     margin: 20px;
   }
   .cardBuilt {
     width: 450px;
-    /* height: 60vh; */
   }
   .houseDiv {
     width: 80vw;
@@ -491,20 +398,35 @@ footer {
   .about1 {
     max-width: 40%;
   }
-  .img1 {
-    margin-top: -5%;
-  }
+
   .circular-image {
     margin-top: 7%;
     margin-left: 5%;
   }
-  .about {
-    margin-left: 10%;
-  }
   .profileAbout {
-    /* margin-left: 10%; */
+    width: 55%;
   }
-  .skill {
-    /* margin-left: 10%; */
+  .skillIcon2 {
+    margin-left: 2%;
+  }
+  .aboutHeader {
+    margin-left: 5%;
+  }
+  a.navGNJ {
+    margin-left: 4%;
+  }
+  .cardLayout {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2%;
+    margin: 2%;
+    gap: 50px;
+    width: 70%;
+  }
+  .cardBuilt:hover {
+    height: 100%;
+  }
+  .btnProject {
+    margin-left: 40%;
+    margin-top: 5%;
   }
 }
