@@ -1,21 +1,37 @@
-* {
+*,
+::after,
+::before {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-body{
+body {
   width: 100%;
   min-height: 100%;
-  font-family: "Calibre", "Georgia", "Times New Roman", "Times", "serif";
+  /* Arial, Helvetica, sans-serif  */
+  font-family: Arial, Helvetica, sans-serif, "Roboto";
   background-color: #f0f2f5;
   color: #262a2e;
-  margin: 0px;
-  line-height: 1.3;
-  font-size: 20px;
+  /* margin: 0px; */
+  /* line-height: 1.3; */
+  font-size: 1rem;
   overflow-x: hidden;
 }
+.App {
+  position: relative;
+  min-height: 100vh;
+}
 
-/* .App {
-} */
+.prjtTitle {
+  color: #b72d17;
+}
+
+.prjtDesc {
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
 
 .profileAbout {
   /* margin: 0 auto; */
@@ -30,17 +46,16 @@ body{
   flex-direction: column;
   padding: 10px;
 }
+main.relativeToNav {
+  position: relative;
+  min-height: 5vh;
+}
 .navClosure {
-  color: white !important;
-  background-color: #46acc2;
-  /* padding: 1%; */
+  /* color: white !important; */
+  background-color: #262525;
   width: 100%;
-  /* position: fixed; */
-  /* overflow: hidden; */
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  left: 0;
+  position: absolute;
+  margin-top: 0;
 }
 .img1 {
   margin-top: 2%;
@@ -51,7 +66,9 @@ body{
   align-self: flex-end;
   position: absolute;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 27px;
+  border-color: transparent;
+  background: transparent;
 }
 .hamburgerIcon:before {
   font-size: 5px;
@@ -67,32 +84,30 @@ body{
   color: white;
   font-size: 20px;
   padding: 5px;
+  font-weight: 600;
 }
 .navAnker:hover {
-  background-color: #247f88;
+  background-color: #feffff;
+  color: black;
 }
 .showNav {
   display: none;
 }
 .circular-image {
-   /* display: block; */
-    /* margin: auto; */
-    height: 230px;
-    width: 230px;
-    border-radius: 50%;
-    /* margin-top: 1%; */
-    margin-left: 10%;
+  /* display: block; */
+  /* margin: auto; */
+  height: 230px;
+  width: 230px;
+  border-radius: 25%;
+  /* margin-top: 1%; */
+  margin-left: 10%;
 }
-.big-heading {
-  font-size: 27px;
-  margin-top: 15%;
-  /* margin-top: 10%; */
-}
-.btnProject{
-  margin-top:2%;
+
+.btnProject {
+  margin-top: 2%;
   text-decoration: none;
-  color:black;
-  border:1px solid black;
+  color: black;
+  border: 1px solid black;
   padding: 5px;
   border-radius: 25%;
   background-color: rgb(59, 52, 42);
@@ -102,30 +117,35 @@ body{
 .about {
   display: flex;
   /* justify-content: space-between; */
-  margin-left: 2%;
+  /* margin-left: 2%; */
   flex-direction: column;
-  /* margin-top: 5%; */
-}
-.about1 {
   margin-top: 5%;
-  /* flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between; */
-  max-width: 70%;
 }
-.socials {
+/* .about1 {
+  margin-top: 5%;
+  max-width: 70%;
+} */
+
+/* .socials {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
   margin-top: 10%;
+} */
+
+.iconSize {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  /* margin-left: 5%; */
+  /* margin-top: 10%; */
 }
+
 .socialIcon {
   color: black;
   padding: 5px;
 }
-.iconSize {
-  font-size: large;
-}
+
 .skillIcon {
   font-size: 30px;
   color: rgb(30, 30, 71);
@@ -145,7 +165,7 @@ ul {
   /* margin-top: -8%; */
   position: relative;
 }
-.skill > h4{
+.skill > h4 {
   margin-left: 3%;
 }
 .skill ul.skillIcon2 li::before {
@@ -175,44 +195,58 @@ ul {
 }
 
 .cardBuilt {
-  width: 75vw;
-  height: 50%;
+  width: 350px;
+  height: 100%;
   border: 1px solid transparent;
+  padding: 10px;
   margin: 5px 0px 15px 0px;
+  /* margin: 10px auto; */
   transition: 0.25s ease-out;
   border-radius: 30px;
   color: #000000;
-  background-color: #b1d5e4;
+  background-color: #e7e9eb;
   /* align-items: center; */
 }
 .cardBuilt:hover {
   transform: scale(1.1);
-  width: 70vw;
-  height: 40%;
-  margin: 50px 0px 50px 10px;
+  /* width: 30px; */
+  /* height: 40%; */
+  margin: 20px 0px 20px 0px;
 }
 
-.cardLayout {
-  /* width: 100%; */
+/* .cardLayout {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */
+/* new  end*/
+.cardLayout {
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 35px;
 }
+.prjtTemp {
+  margin: 30px;
+}
+/* new  */
 .cardSection {
   margin: 0px auto;
 }
 .tech-list {
   display: flex;
-  flex-wrap: wrap;
-  margin: 10px 0px;
+  /* margin: 3px; */
+  /* margin: 10px 0px; */
 }
 .tech-list li {
   margin: 0px 10px 5px 0px;
 }
-.cardContent {
+/* .cardContent {
   margin-left: 20px;
-}
+} */
 .cardIcon {
   margin-bottom: 15px;
 }
@@ -238,6 +272,11 @@ ul {
   width: 300px;
   margin-left: 2px;
   margin-top: -10px;
+}
+
+.articlePage {
+  margin-top: 10%;
+  padding-bottom: 20.5rem;
 }
 
 .footerIcon {
@@ -266,7 +305,29 @@ footer {
   color: #f0f2f5;
   width: 100%;
   position: absolute;
-  margin-top: 10%;
+  left: 0px;
+  margin-top: 20%;
+  height: 20vh;
+  padding: 10px;
+}
+
+@media (min-width: 625px) {
+  .big-heading {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 722px) {
+  .about1 {
+    max-width: 65%;
+  }
+}
+
+/* to make horizontal scroll enabled for small devices */
+@media (max-width: 600px) {
+  .App {
+    overflow-x: auto;
+  }
 }
 
 /* Tablet-reponsive design */
@@ -283,104 +344,72 @@ footer {
     padding: 8px 5px 2px 10px;
     margin-top: -28px;
   }
-  .cardBuilt {
-    width: 40vw;
-    height: 58vh;
+  /* .cardBuilt {
+    width: 25rem;
+    height: 100%;
     border: 1px solid transparent;
     margin: 5px 0px 15px 0px;
-    /* align-items: center; */
-  }
+    align-items: center;
+  } */
   .cardBuilt:hover {
-    transform: scale(1.1);
-    width: 40vw;
-    height: 58vh;
-    margin: 20px 0px 20px 10px;
+    /* transform: scale(1.1); */
+    width: 320px;
+    height: 60%;
+    margin: 10px 0px 0px 10px;
   }
-  .cardContent {
+  /* .cardContent {
     margin-left: 10px;
-  }
+  } */
   .project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 30px;
-    row-gap: 15px;
+    /* grid-template-rows: auto; */
+    column-gap: 10px;
+    row-gap: 10px;
   }
   .profileAbout {
     width: 80%;
-    margin-left: 2.5%;;
+    margin-left: 2.5%;
   }
-  .circular-image {
-    margin-top: 5%;
-}
-.about{
-  margin-left: 5%;
-}
-.navGNJ{
-  margin-left: 3%;
-}
-.skill{
-  margin-left: 2%;
-}
-}
 
-@media (min-width: 625px){
-  .big-heading{
-    margin-top: 10%;
+  .about {
+    margin-left: 5%;
+  }
+  .navGNJ {
+    margin-left: 3%;
+  }
+  .skill {
+    margin-left: 2%;
   }
 }
-
-
-@media (min-width: 950px) {
-  /* .circular-image {
-    margin-top: -15%;
-} */
-}
-/* @media (min-width:320px){
-  .big-heading{
-    margin-top: 15%;
-  }
-} */
-
-@media (min-width: 722px) {
-  .about1{
-    max-width: 65%;
-  }
-}
-
-/* to make horizontal scroll enabled for small devices */
-@media (max-width: 600px) {
-  .App{
-      overflow-x: auto;
-  }
- }
 
 @media (min-width: 849px) {
-  .about1{
+  .about1 {
     max-width: 55%;
   }
 }
-
 
 /* Mini large Screen @ 992px */
 @media (min-width: 992px) {
   .project-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    grid-column-gap: 10px;
     column-gap: 10px;
+    grid-row-gap: 10px;
     row-gap: 10px;
   }
-  .cardBuilt {
+  /* .cardBuilt {
     width: 27vw;
     height: 62vh;
-  }
-  .cardBuilt:hover {
+  } */
+  /* .cardBuilt:hover {
     transform: scale(1.1);
     width: 28vw;
     height: 62vh;
     margin: 20px 20px 20px 10px;
-  }
+  } */
   .cardProject {
     margin-top: 8%;
   }
@@ -399,38 +428,34 @@ footer {
 @media (min-width: 1200px) {
   .cardBuilt:hover {
     /* transform: scale(1.1); */
-    width: 23vw;
-    height: 60vh;
-    margin: 20px 20px 50px 30px;
+    width: 450px;
+    height: 35vh;
+    margin: 20px;
   }
   .cardBuilt {
-    width: 25vw;
-    height: 60vh;
+    width: 450px;
+    /* height: 60vh; */
   }
   .houseDiv {
     width: 80vw;
   }
   .about1 {
     max-width: 40%;
-}
-.img1{
-  margin-top: -5%;
-}
+  }
+  .img1 {
+    margin-top: -5%;
+  }
   .circular-image {
     margin-top: 7%;
     margin-left: 5%;
+  }
+  .about {
+    margin-left: 10%;
+  }
+  .profileAbout {
+    margin-left: 10%;
+  }
+  .skill {
+    margin-left: 10%;
+  }
 }
-.about{
-  margin-left: 10%;
-}
-.profileAbout{
-  margin-left: 10%;
-}
-.skill{
-  margin-left: 10%;
-}
-
-}
-
-
-
