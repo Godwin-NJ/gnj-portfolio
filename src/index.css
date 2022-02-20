@@ -220,7 +220,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 35px;
+  /* margin: 35px; */
 }
 .prjtTemp {
   margin: 30px;
@@ -289,6 +289,7 @@ footer {
   background-color: #262a2e;
   color: #f0f2f5;
   width: 100%;
+  /* max-width: 100rem; */
   position: absolute;
   left: 0px;
   margin-top: 20%;
@@ -296,8 +297,14 @@ footer {
 
 /* to make horizontal scroll enabled for small devices */
 @media (max-width: 600px) {
-  .App {
+  /* .App {
     overflow-x: auto;
+  } */
+  .skillIcon2 {
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+  }
+  .cardBuilt {
+    width: 300px;
   }
 }
 
