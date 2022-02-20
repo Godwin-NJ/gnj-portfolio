@@ -8,7 +8,7 @@ This projects uses the following technolgies
 4) Git hub and Netlify deployed 
 
 GITHUB LINK - http://Godwin-NJ.github.io/gnj-portfolio
-NETLIFY LINK - https://relaxed-dubinsky-cf0bc0.netlify.app
+NETLIFY LINK - https://godwin-amadi-jnr.netlify.app/
 
 **You can aslo view articles inludeded into my projects which cuts across differenet technologies and interest. **
 
