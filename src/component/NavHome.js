@@ -18,7 +18,7 @@ const NavHome = ({ navToggle, isNavOpen }) => {
               <AiOutlineAlignLeft />
             </a>
           </button>
-          <nav className={`navInfo ${isNavOpen ? "" : "showNav"}`}>
+          <nav className={`${isNavOpen ? "navInfo showNav" : "navInfo"}`}>
             {/* <Link className="navAnker navbar-brand" to="/about"></Link> */}
             <Link className="navAnker" to="/projects">
               Projects

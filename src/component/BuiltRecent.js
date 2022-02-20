@@ -1,21 +1,22 @@
 // import {  Card, CardText,CardTitle,CardActions} from 'react-mdl';
-import { AiFillGithub, AiOutlineLink, AiOutlineFolder } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiOutlineLink,
+  AiOutlineFolder,
+  AiTwotoneTool,
+  AiOutlineSetting,
+} from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Built = () => {
   return (
     <div className="prjtTemp">
       {/* <div className="cardLayout"> */}
-      <h5>Some things I've built recently</h5>
-      <div
-      // className="houseDiv"
-      // style={{
-      //   overflowY: "scroll",
-      //   border: "1px solid black",
-      //   height: "500px",
-      //   padding: "20px",
-      // }}
-      >
+      <h5>
+        CURRENT BUILT PROJECTS -<AiOutlineSetting />
+        <AiTwotoneTool /> BELOW
+      </h5>
+      <div>
         <ul className="cardLayout">
           {/* <ul className="project-grid"> */}
           {/* project one  */}
@@ -167,9 +168,11 @@ const Built = () => {
         </ul>
       </div>
       {/* <button style={{marginTop:'5%'}} >See More</button> */}
-      <Link className="btnProject" to="/projects">
-        See More
-      </Link>
+      <button className="btnProject">
+        <Link to="/projects" style={{ textDecoration: "none", color: "white" }}>
+          See More Projects
+        </Link>
+      </button>
     </div>
   );
 };

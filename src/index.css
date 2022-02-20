@@ -36,6 +36,11 @@ h6 {
   font-size: 15px;
   letter-spacing: 2px;
 }
+h5 {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
 .about1 {
   width: 85vw;
 }
@@ -110,6 +115,11 @@ main.relativeToNav {
 .navInfo {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  height: 0px;
+}
+.showNav {
+  height: 7rem;
 }
 .navAnker {
   text-decoration: none;
@@ -122,9 +132,7 @@ main.relativeToNav {
   background-color: #feffff;
   color: black;
 }
-.showNav {
-  display: none;
-}
+
 .circular-image {
   /* display: block; */
   /* margin: auto; */
@@ -136,14 +144,16 @@ main.relativeToNav {
 }
 
 .btnProject {
-  margin-top: 2%;
-  text-decoration: none;
-  color: black;
+  margin-top: 5vh;
+  font-size: 20px;
   border: 1px solid black;
-  padding: 5px;
-  border-radius: 25%;
-  background-color: rgb(59, 52, 42);
-  color: #f0f2f5;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10%;
+  border-color: transparent;
+  background-color: rgb(26 26 26);
+  color: #f6f7f9;
+  margin-left: 18%;
 }
 
 .about {
@@ -340,7 +350,7 @@ footer {
   left: 0px;
   margin-top: 20%;
   height: 20vh;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 /* to make horizontal scroll enabled for small devices */
@@ -364,10 +374,13 @@ footer {
 
 /* Tablet-reponsive design */
 @media (min-width: 768px) {
-  .showNav {
-    display: flex;
+  .navInfo {
+    height: auto !important;
+    overflow: visible;
     flex-direction: row;
+    margin-top: -10px;
     justify-content: flex-end;
+    padding: 5px;
   }
   .icon {
     display: none;
@@ -400,7 +413,7 @@ footer {
     row-gap: 10px;
   }
   .profileAbout {
-    width: 80%;
+    width: 85%;
     /* margin-left: 2.5%; */
   }
 
