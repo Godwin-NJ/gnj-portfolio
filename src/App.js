@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import NavHome from "./component/NavHome";
+import NavHome from "./Pages/NavHome";
 import RouteFind from "./component/RouteFind";
-import Footer from "../src/component/Contact";
+import Footer from "./Pages/Footer";
+import BuildtRecently from "../src/Pages/BuiltRecent";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -18,6 +19,7 @@ function App() {
       <NavHome navToggle={navToggle} isNavOpen={isNavOpen} />
       {/* <RouteFind isUserAuthenticated={isUserAuthenticated}/> */}
       <RouteFind />
+      <BuildtRecently />
       <Footer />
     </div>
   );

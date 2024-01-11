@@ -10,16 +10,16 @@ import gnjImage from "../images/gnj-pic.jpg";
 const About = () => {
   return (
     <div>
-      {/* Into about me  */}
+      {/* Intro about me  */}
       <main className="aboutHeader">
         <section className="about">
-          <div className="about1">
+          {/* <div className="about1">
             <h4 className="big-heading">Hi, I'm Godwin Amadi</h4>
             <h6>
               A software Developer that build web applications and provide
               enterprise solutions for businesses.
             </h6>
-          </div>
+          </div> */}
           <div className="img1">
             <IconContext.Provider value={{ className: "iconSize" }}>
               <div>
@@ -61,14 +61,14 @@ const About = () => {
                 </a>
               </div>
             </IconContext.Provider>
-            <div>
+            {/* <div>
               <img
                 className="circular-image"
                 // src="https://ltkdigital.com/img/avatar.svg"
                 src={gnjImage}
                 alt="godwin-amadi"
               />
-            </div>
+            </div> */}
           </div>
         </section>
 

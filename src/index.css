@@ -27,22 +27,22 @@ body {
 }
 
 h4 {
-  color: #552ea1;
+  /* color: #552ea1; */
   font-size: 20px;
 }
 h6 {
-  color: black;
+  /* color: black; */
   font-size: 15px;
   letter-spacing: 2px;
 }
 h5 {
-  color: black;
+  /* color: black; */
   font-size: 20px;
   letter-spacing: 2px;
 }
-.about1 {
+/* .about1 {
   width: 85vw;
-}
+} */
 .prjtTitle {
   color: #b72d17;
 }
@@ -58,26 +58,11 @@ main.relativeToNav {
   min-height: 5vh;
 }
 
-.navbar-brand {
-  text-decoration: none;
-  margin: 8px;
-}
-.nav {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
 main.relativeToNav {
   position: relative;
   min-height: 5vh;
 }
-.navClosure {
-  /* color: white !important; */
-  background-color: #262525;
-  width: 100%;
-  position: absolute;
-  margin-top: 0;
-}
+
 .img1 {
   margin-top: 2%;
   display: flex;
@@ -105,32 +90,12 @@ main.relativeToNav {
   font-size: 5px;
 }
 
-.navInfo {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  height: 0px;
-}
 .showNav {
   height: 7rem;
 }
-.navAnker {
+a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  padding: 5px;
-  font-weight: 600;
-}
-.navAnker:hover {
-  background-color: #feffff;
-  color: black;
-}
-
-.circular-image {
-  height: 230px;
-  width: 230px;
-  border-radius: 25%;
-  margin-left: 10%;
 }
 
 .btnProject {
@@ -285,15 +250,6 @@ ul {
   width: 350px;
   margin: 0 auto;
 }
-footer {
-  background-color: #262a2e;
-  color: #f0f2f5;
-  width: 100%;
-  /* max-width: 100rem; */
-  position: absolute;
-  left: 0px;
-  margin-top: 20%;
-}
 
 /* to make horizontal scroll enabled for small devices */
 @media (max-width: 600px) {
@@ -309,27 +265,19 @@ footer {
 }
 
 @media (min-width: 722px) {
-  .about1 {
+  /* .about1 {
     max-width: 65%;
-  }
+  } */
 }
 
 /* Tablet-reponsive design */
 @media (min-width: 768px) {
-  .navInfo {
-    height: auto !important;
-    overflow: visible;
-    flex-direction: row;
-    margin-top: -10px;
-    justify-content: flex-end;
-    padding: 5px;
-  }
   .icon {
     display: none;
   }
-  .navAnker {
+  /* .navAnker {
     margin-top: -28px;
-  }
+  } */
 
   .cardBuilt:hover {
     width: 320px;
@@ -351,9 +299,9 @@ footer {
   .about {
     margin-top: 7%;
   }
-  .navbar-brand {
+  /* .navbar-brand {
     margin: -1px;
-  }
+  } */
 }
 
 @media (min-width: 840px) {
@@ -402,14 +350,14 @@ footer {
   .houseDiv {
     width: 80vw;
   }
-  .about1 {
+  /* .about1 {
     max-width: 40%;
-  }
+  } */
 
-  .circular-image {
+  /* .circular-image {
     margin-top: 7%;
     margin-left: 5%;
-  }
+  } */
   .profileAbout {
     width: 55%;
   }
@@ -419,9 +367,7 @@ footer {
   .aboutHeader {
     margin-left: 5%;
   }
-  a.navGNJ {
-    margin-left: 4%;
-  }
+
   .cardLayout {
     grid-template-columns: 1fr 1fr;
     margin-top: 2%;
