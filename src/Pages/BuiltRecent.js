@@ -7,18 +7,44 @@ import {
   AiOutlineSetting,
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import ProjectCard from "../component/ProjectCard";
+import SpotifyImage from "../images/spotify-1759471_1280.jpg";
 
 const Built = () => {
   return (
-    <div className="prjtTemp">
+    <Wrapper className="prjtTemp">
       {/* <div className="cardLayout"> */}
-      <h5>
-        CURRENT BUILT PROJECTS -<AiOutlineSetting />
-        <AiTwotoneTool /> BELOW
-      </h5>
+      <h6 className="spotlight-info">
+        Spotlight Articles & PROJECTS
+        {/* -<AiOutlineSetting /> */}
+        {/* <AiTwotoneTool /> BELOW */}
+      </h6>
+
       <div>
         <ul className="cardLayout">
           {/* <ul className="project-grid"> */}
+          <ProjectCard
+            title="Build a spotify connected App"
+            projectImage={SpotifyImage}
+            imageAlt={"spotify image"}
+            textContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptate impedit iure eos neque consequuntur magni nostrum
+            praesentium quas obcaecati ab?praesentium quas obcaecati ab?
+            praesentium quas obcaecati ab? praesentium quas obcaecati
+            ab? Voluptate impedit iure eos neque consequuntur magni
+            nostrum"
+            projectUrlPath={"&"}
+            technologyUsed={[
+              "React",
+              "Vue",
+              "Sass",
+              "Animation",
+              "c#",
+              "sql",
+              "sequel-orm",
+            ]}
+          />
           {/* project one  */}
           <li className="cardBuilt">
             <div>
@@ -173,8 +199,22 @@ const Built = () => {
           See More Projects
         </Link>
       </button>
-    </div>
+    </Wrapper>
   );
 };
 
 export default Built;
+
+const Wrapper = styled.section`
+  /* margin-top: 20px; */
+  height: 100%;
+  .prjtTemp {
+  }
+  .spotlight-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+`;

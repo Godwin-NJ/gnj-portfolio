@@ -19,7 +19,7 @@ function App() {
       <NavHome navToggle={navToggle} isNavOpen={isNavOpen} />
       {/* <RouteFind isUserAuthenticated={isUserAuthenticated}/> */}
       <RouteFind />
-      <BuildtRecently />
+
       <Footer />
     </div>
   );

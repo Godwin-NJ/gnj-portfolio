@@ -71,8 +71,8 @@ const Wrapper = styled.section`
     width: 100%;
     /* max-width: 100rem; */
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    /* left: 0px; */
+    /* bottom: 0px; */
     /* margin-top: 20%; */
   }
   /* .footerIcon {

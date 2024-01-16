@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import gnjImage from "../images/gnj-pic.jpg";
 import { FaTwitter } from "react-icons/fa";
+import BuiltRecently from "./BuiltRecent";
 
 const LandingPage = () => {
   return (
@@ -40,6 +41,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+      <BuiltRecently />
     </Wrapper>
   );
 };

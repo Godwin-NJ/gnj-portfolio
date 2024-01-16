@@ -20,6 +20,8 @@ body {
 .App {
   position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutHeader {
@@ -175,9 +177,8 @@ ul {
   background-color: #e7e9eb;
 }
 .cardBuilt:hover {
-  transform: scale(1.1);
-
-  margin: 20px 0px 20px 0px;
+  /* transform: scale(1.1); */
+  /* margin: 20px 0px 20px 0px; */
 }
 
 .cardLayout {
@@ -187,9 +188,7 @@ ul {
   gap: 20px;
   /* margin: 35px; */
 }
-.prjtTemp {
-  margin: 30px;
-}
+
 /* new  */
 .cardSection {
   margin: 0px auto;
@@ -279,11 +278,11 @@ ul {
     margin-top: -28px;
   } */
 
-  .cardBuilt:hover {
+  /* .cardBuilt:hover {
     width: 320px;
     height: 60%;
     margin: 10px 0px 0px 10px;
-  }
+  } */
 
   .project-grid {
     display: grid;
@@ -310,10 +309,10 @@ ul {
     grid-template-columns: 1fr 1fr;
     margin: 0%;
   }
-  .cardBuilt:hover {
+  /* .cardBuilt:hover {
     transform: scale(1.1);
     height: 100%;
-  }
+  } */
 }
 
 @media (min-width: 992px) {
@@ -339,11 +338,11 @@ ul {
 }
 
 @media (min-width: 1200px) {
-  .cardBuilt:hover {
+  /* .cardBuilt:hover {
     width: 450px;
     height: 35vh;
     margin: 20px;
-  }
+  } */
   .cardBuilt {
     width: 450px;
   }
@@ -375,9 +374,9 @@ ul {
     gap: 50px;
     width: 70%;
   }
-  .cardBuilt:hover {
+  /* .cardBuilt:hover {
     height: 100%;
-  }
+  } */
   .btnProject {
     margin-left: 40%;
     margin-top: 5%;
