@@ -62,10 +62,24 @@ const Wrapper = styled.section`
     margin: 8px;
     font-weight: 700;
   }
+  main.relativeToNav {
+    position: relative;
+    min-height: 5vh;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* main.relativeToNav {
+  position: relative;
+  min-height: 5vh;
+} */
   .navClosure {
     /* color: white !important; */
     background-color: #262525;
-    width: 100%;
+    /* width: 100%; */
+    width: 100vw;
     position: absolute;
     padding: 10px;
     /* margin-top: 0; */

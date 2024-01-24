@@ -6,10 +6,11 @@ import { IconContext } from "react-icons";
 import BuiltRecently from "./BuiltRecent";
 // import {Route,Switch} from 'react-router-dom'
 import gnjImage from "../images/gnj-pic.jpg";
+import styled from "styled-components";
 
 const About = () => {
   return (
-    <div>
+    <Wrapper>
       {/* Intro about me  */}
       <main className="aboutHeader">
         <section className="about">
@@ -20,7 +21,7 @@ const About = () => {
               enterprise solutions for businesses.
             </h6>
           </div> */}
-          <div className="img1">
+          {/* <div className="img1">
             <IconContext.Provider value={{ className: "iconSize" }}>
               <div>
                 <a
@@ -61,15 +62,15 @@ const About = () => {
                 </a>
               </div>
             </IconContext.Provider>
-            {/* <div>
+            <div>
               <img
                 className="circular-image"
-                // src="https://ltkdigital.com/img/avatar.svg"
+                src="https://ltkdigital.com/img/avatar.svg"
                 src={gnjImage}
                 alt="godwin-amadi"
               />
-            </div> */}
-          </div>
+            </div>
+          </div> */}
         </section>
 
         {/* About me  section*/}
@@ -94,7 +95,7 @@ const About = () => {
         </section>
 
         {/* skill section */}
-        <section className="skill">
+        {/* <section className="skill">
           <h4>Skills || Technologies </h4>
           <IconContext.Provider value={{ className: "skillIcon" }}>
             <div className="iconFlex">
@@ -111,15 +112,27 @@ const About = () => {
               </ul>
             </div>
           </IconContext.Provider>
-        </section>
+        </section> */}
       </main>
       {/* <Switch>
                 <Route exact path="/contact" component={Contact}></Route>
                 </Switch> */}
-      <BuiltRecently />
+      {/* <BuiltRecently /> */}
       {/* < Contact /> */}
-    </div>
+    </Wrapper>
   );
 };
 
 export default About;
+
+const Wrapper = styled.section`
+  /* .aboutHeader {
+    margin-left: 5%;
+  } */
+
+  /* .about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+} */
+`;

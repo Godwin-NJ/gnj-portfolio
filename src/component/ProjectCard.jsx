@@ -49,13 +49,14 @@ const ProjectCard = (props) => {
 export default ProjectCard;
 
 const Wrapper = styled.a`
+  display: block;
   color: black;
   border: 1px solid "";
   border-radius: 5px;
   /* offset-x | offset-y | blur-radius | spread-radius | color */
   /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
   box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
-  margin: 5px;
+  margin: 10px;
   width: 30vw;
   max-height: 75vh;
   overflow: auto;
@@ -89,7 +90,7 @@ const Wrapper = styled.a`
   .contentLayout {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
   }
   .techItemBox {
     /* margin: 5%; */
