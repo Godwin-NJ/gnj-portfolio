@@ -6,59 +6,41 @@ import {
 } from "react-icons/ai";
 import { BiCaretDown } from "react-icons/bi";
 import styled from "styled-components";
+import SocialIcon from "../component/SocialIcon";
 
 const Footer = () => {
   return (
     <Wrapper>
       <footer>
         <article className="footerStyle">
-          {/* <h4>
-            <BiCaretDown />{" "}
-          </h4> */}
           <div className="footerContainer">
             <section className="userFooter-info">
-              <p>
-                @ {new Date().getFullYear()} Godwin Amadi
-                {/* @ 2021 Designed & built by Godwin Amadi */}
-              </p>
-              {/* <p>amadigodwin7@gmail.com</p> */}
+              <p>@ Reach Out to me !</p>
             </section>
             <section className="footerIcon">
               <span>
-                <a
+                <SocialIcon
                   href="https://github.com/Godwin-NJ"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiFillGithub />
-                </a>
+                  alt="github"
+                  ReactIcon={AiFillGithub}
+                />
               </span>
               <span>
-                <a
+                <SocialIcon
                   href="https://www.linkedin.com/in/amadigodwin7/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiFillLinkedin />
-                </a>
+                  alt="linkedIn"
+                  ReactIcon={AiFillLinkedin}
+                />
               </span>
-              {/* <span>
-                <a
-                  href="https://mail.google.com/mail/u/0/?fs=1&to=amadigodwin7@gmail.com&su=SUBJECT&body=BODY&tf=cm"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiFillMail />
-                </a>
-              </span> */}
               <span>
-                <a
+                <SocialIcon
                   href="http://twitter.com/godwin_nj"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <AiFillTwitterCircle />
-                </a>
+                  alt="Twitter"
+                  ReactIcon={AiFillTwitterCircle}
+                />
+              </span>
+              <span className="emailAdd">
+                <p>amadigodwin7@gmail.com</p>
               </span>
             </section>
           </div>
@@ -84,7 +66,8 @@ const Wrapper = styled.section`
   }
   .footerContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     padding: 10px;
     .userFooter-info {
       opacity: 0.7;
@@ -99,12 +82,17 @@ const Wrapper = styled.section`
       flex-direction: row;
       gap: 15px;
       font-size: 25px;
+      margin-top: -5px;
       a {
         opacity: 0.7;
         &:hover {
           cursor: pointer;
           opacity: 0.9;
         }
+      }
+      .emailAdd {
+        font-size: 20px;
+        opacity: 0.9;
       }
     }
   }

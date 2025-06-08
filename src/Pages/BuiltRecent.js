@@ -1,15 +1,8 @@
-// import {  Card, CardText,CardTitle,CardActions} from 'react-mdl';
-import {
-  AiFillGithub,
-  AiOutlineLink,
-  AiOutlineFolder,
-  AiTwotoneTool,
-  AiOutlineSetting,
-} from "react-icons/ai";
+import { IoCalculatorOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ProjectCard from "../component/ProjectCard";
-import SpotifyImage from "../images/spotify-1759471_1280.jpg";
+// import SpotifyImage from "../images/spotify-1759471_1280.jpg";
 
 const Built = () => {
   return (
@@ -22,64 +15,67 @@ const Built = () => {
 
       <div>
         <ul className="cardLayout">
-          {/* <ProjectCard
-            title="Build a spotify connected App"
-            projectImage={SpotifyImage}
-            imageAlt={"spotify image"}
-            textContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Voluptate impedit iure eos neque consequuntur magni nostrum
-            praesentium quas obcaecati ab?praesentium quas obcaecati ab?
-            praesentium quas obcaecati ab? praesentium quas obcaecati
-            ab? Voluptate impedit iure eos neque consequuntur magni
-            nostrum"
-            projectUrlPath={"&"}
-            technologyUsed={[
-              "React",
-              "Vue",
-              "Sass",
-              "Animation",
-              "c#",
-              "sql",
-              "sequel-orm",
+          <ProjectCard
+            title="Inventory Management API-Article"
+            textContent="Medium enterprize Inventory Management Soln."
+            projectUrlPath={
+              "https://godwinamadi-nj.hashnode.dev/build-and-dockerize-a-node-js-inventory-app"
+            }
+            githubProjectLink={"https://github.com/Godwin-NJ/Unit-Inventory"}
+            websiteProjectLink={
+              "https://godwinamadi-nj.hashnode.dev/build-and-dockerize-a-node-js-inventory-app"
+            }
+            technologiesUsed={[
+              "Node JS",
+              "MongoDb",
+              "authentication",
+              "docker",
+              "authorization",
             ]}
+          />
+          {/* <ProjectCard
+            title="React Calculator"
+            ProjectIcon={IoCalculatorOutline}
+            imageAlt={"calculator"}
+            textContent="Functional Digital calulator "
+            projectUrlPath={"https://godwin-nj.github.io/sci-calculator/"}
+            githubProjectLink={"https://github.com/Godwin-NJ/sci-calculator"}
+            websiteProjectLink={"https://godwin-nj.github.io/sci-calculator/"}
+            technologiesUsed={["React", "CSS"]}
           /> */}
 
           <ProjectCard
-            title="React Calculator"
-            projectImage={SpotifyImage}
-            imageAlt={"calculator"}
-            textContent="A functional react calulator"
-            projectUrlPath={"https://godwin-nj.github.io/sci-calculator/"}
-            technologyUsed={["React", "CSS"]}
-          />
-
-          <ProjectCard
-            title="Robotic Friends API display"
-            projectImage={SpotifyImage}
+            title="Robo-Friends Web App"
             imageAlt={"robo-friends"}
-            textContent="Fetching Robo-Friends API and displaying data"
+            textContent="Robo-Friends search web platform using the Robo-friends API"
             projectUrlPath={"https://godwin-nj.github.io/robofriends-2"}
-            technologyUsed={["React-JS", "API", "CSS"]}
+            githubProjectLink={"https://github.com/Godwin-NJ/robofriends-2"}
+            websiteProjectLink={"https://godwin-nj.github.io/robofriends-2"}
+            technologiesUsed={["React-JS", "API", "CSS"]}
           />
 
           {/* redeploy this  this a major project*/}
           <ProjectCard
             title="Face-Recognition App"
-            projectImage={SpotifyImage}
             imageAlt={"Face-Recognition App"}
-            textContent="Web App using A.I to detect the face position of images"
+            textContent="A Smart face-recognition web app"
             projectUrlPath={"https://github.com/Godwin-NJ/facerecognitionbrain"}
-            technologyUsed={["React-JS", "Node-JS", "Postgres SQL", "Heroku"]}
+            githubProjectLink={
+              "https://github.com/Godwin-NJ/facerecognitionbrain"
+            }
+            websiteProjectLink={
+              "https://github.com/Godwin-NJ/facerecognitionbrain"
+            }
+            technologiesUsed={["React-JS", "Node-JS", "Postgres SQL", "Heroku"]}
           />
         </ul>
       </div>
 
       <button className="btnProject">
         <Link to="/projects" style={{ textDecoration: "none", color: "white" }}>
-          View More
+          See More
         </Link>
       </button>
-      {/* <button style={{marginTop:'5%'}} >See More</button> */}
     </Wrapper>
   );
 };
@@ -88,8 +84,8 @@ export default Built;
 
 const Wrapper = styled.section`
   /* position: relative; */
-  margin-top: 20px;
-  height: 100%;
+  margin-top: 1%;
+  /* height: 100%; */
   .prjtTemp {
   }
   .spotlight-info {
@@ -102,9 +98,11 @@ const Wrapper = styled.section`
   .cardLayout {
     /* width: 100%; */
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    /* gap: 10px; */
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
+    /* justify-content: space-around; */
     /* margin: 35px; */
   }
   .btnProject {
@@ -117,8 +115,11 @@ const Wrapper = styled.section`
     text-decoration: none;
     border-radius: 15px;
     border-color: transparent;
-    background-color: rgb(26 26 26);
+    background-color: #441696;
     color: #f6f7f9;
+    &:hover {
+      box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+    }
     /* margin-left: 18%; */
   }
 

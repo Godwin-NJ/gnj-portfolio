@@ -41,10 +41,9 @@ const Wrapper = styled.section`
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   .content {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     /* height: 80vh; */
     padding-bottom: 10%;
   }

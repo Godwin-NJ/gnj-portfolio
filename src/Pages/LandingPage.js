@@ -2,7 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import gnjImage from "../images/gnj-pic.jpg";
 import { FaTwitter } from "react-icons/fa";
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  // AiFillMail,
+  // AiFillTwitterCircle,
+} from "react-icons/ai";
 import BuiltRecently from "./BuiltRecent";
+import SocialIcon from "../component/SocialIcon";
 
 const LandingPage = () => {
   return (
@@ -19,13 +26,33 @@ const LandingPage = () => {
 
         <div className="about1">
           <h4 className="big-heading">Hi, I'm Godwin Amadi</h4>
-          <p className="big-heading">Software Developer / Technical Writer</p>
+          <p className="big-heading">Software Developer || Technical Writer</p>
 
           <p className="description">
-            I build solutions for individuals and enterprise.
+            I build solutions for Individuals and Enterprise.
           </p>
           <p className="actionAbout">Build. Improve. Web. API. Write</p>
-          <div className="borderIcon">
+          <div className="socialContact">
+            <SocialIcon
+              href="http://twitter.com/godwin_nj"
+              alt="twitter"
+              ReactIcon={FaTwitter}
+              iconColor="blue"
+            />
+            <SocialIcon
+              href="https://github.com/Godwin-NJ"
+              alt="Github"
+              ReactIcon={AiFillGithub}
+              // iconColor=""
+            />
+            <SocialIcon
+              href="https://www.linkedin.com/in/amadigodwin7/"
+              alt="LinkedIn"
+              ReactIcon={AiFillLinkedin}
+              iconColor="blue"
+            />
+          </div>
+          {/* <div className="borderIcon">
             <a
               className="socialIcon"
               href="http://twitter.com/godwin_nj"
@@ -38,7 +65,7 @@ const LandingPage = () => {
               />
               <span className="twiiterFollow">Follow</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
       <BuiltRecently />
@@ -91,22 +118,12 @@ const Wrapper = styled.div`
       /* color: #fff; */
     }
   }
-  .socialIcon {
-    color: #fff;
-
-    display: flex;
-    gap: 5px;
-    /* padding: 5px; */
-  }
 
   .twiiterFollow {
     font-size: 12px;
     /* margin-top: -3%; */
   }
-  .borderIcon {
-    &:hover {
-      border-radius: 10px;
-      background: #525258;
-    }
+  .socialContact {
+    display: flex;
   }
 `;

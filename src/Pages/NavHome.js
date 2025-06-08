@@ -44,9 +44,9 @@ const NavHome = ({ navToggle, isNavOpen }) => {
                 Resume
               </a> */}
 
-              <Link className="navAnker" to="/contact">
+              {/* <Link className="navAnker" to="/contact">
                 Contact
-              </Link>
+              </Link> */}
             </nav>
           </header>
         </div>

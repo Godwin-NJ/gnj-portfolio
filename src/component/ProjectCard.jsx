@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { ImBooks } from "react-icons/im";
+import SocialIcon from "./SocialIcon";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLink } from "react-icons/fa";
 
 //note below types to be passed as props
 /* interface projectProps {
@@ -7,36 +11,68 @@ title : string ,
 projectImage : string | any ,
 content : string ,
 urlPath : string,
-technologyUsed : string[]
+technologiesUsed : string[]
 }*/
 
 const ProjectCard = (props) => {
   const {
     title,
-    projectImage,
-    imageAlt,
+    ProjectIcon,
+    projectIconColor,
     textContent,
     projectUrlPath,
-    technologyUsed,
+    technologiesUsed,
+    githubProjectLink,
+    websiteProjectLink,
   } = props;
   //grid of two , image and content
   return (
-    <Wrapper href={projectUrlPath} target="_blank">
+    <Wrapper
+      href={projectUrlPath}
+      target="_blank"
+      $projectIconColor={projectIconColor}
+    >
       <content>
-        <div className="imageBox">
-          {/* //image */}
-          <img src={projectImage} alt={imageAlt} className="imageResize"></img>
-        </div>
         <header>
+          <span>
+            <ImBooks className="defaultIcon" />
+          </span>
           <p className="titleOfProject">{title}</p>
         </header>
         <div className="contentLayout">
-          {/* //content */}
-          {/* //add max-content */}
-          <p className="textContent">{textContent}</p>
+          <div className="projectInfo">
+            <span>
+              {ProjectIcon && <ProjectIcon className="projectIcon" />}
+              {/* {<ProjectIcon className="projectIcon" />} */}
+            </span>
+            <p className="textContent">{textContent}</p>
+          </div>
+
+          <section className="projectLinks">
+            {/* github link */}
+            <span>
+              <SocialIcon
+                href={githubProjectLink}
+                // href=${"githubProjectLink"}
+                alt="Github project link"
+                ReactIcon={AiFillGithub}
+                iconColor="#000"
+              />
+            </span>
+            {/* website link */}
+            <span>
+              <SocialIcon
+                href={websiteProjectLink}
+                alt="project website link"
+                ReactIcon={FaLink}
+                iconColor="#000"
+              />
+            </span>
+          </section>
+
           <div className="techItemBox">
-            {technologyUsed &&
-              technologyUsed.map((item) => {
+            {technologiesUsed &&
+              technologiesUsed.map((item) => {
                 return <button className="techItem">{item}</button>;
               })}
           </div>
@@ -53,28 +89,36 @@ const Wrapper = styled.a`
   color: black;
   border: 1px solid "";
   border-radius: 5px;
-  /* offset-x | offset-y | blur-radius | spread-radius | color */
-  /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
   box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
   margin: 10px;
-  width: 30vw;
+  width: 550px;
+  max-width: 550px;
   max-height: 75vh;
   overflow: auto;
+  padding: 10px;
+  &:hover {
+    box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.2);
+  }
   .imageResize {
     height: 210px;
     width: 100%;
   }
-  .imageBox {
-    /* margin: 2px; */
+  header {
+    display: flex;
+    padding: 10px;
+    padding-left: 15px;
+    .defaultIcon {
+      font-size: 30px;
+    }
   }
   .titleOfProject {
-    font-weight: 550;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 20px;
   }
   .textContent {
-    font-size: 15px;
-    opacity: 0.8;
-    height: 115px;
+    font-size: 20px;
+    opacity: 0.6;
+    /* height: 115px; */
     overflow: hidden;
     /* max-height: 50px; */
   }
@@ -83,7 +127,9 @@ const Wrapper = styled.a`
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
-    color: #7bcf7b;
+    /* color: #7bcf7b; */
+    color: #e6dede;
+    opacity: 0.8;
     outline: none;
     background-color: black;
   }
@@ -92,7 +138,21 @@ const Wrapper = styled.a`
     flex-direction: column;
     gap: 7px;
   }
-  .techItemBox {
-    /* margin: 5%; */
+  .projectIcon {
+    color: ${(props) => props.$projectIconColor};
+    font-size: 30px;
+  }
+  .projectInfo {
+    display: flex;
+    padding: 10px;
+  }
+  .projectLinks {
+    display: flex;
+    gap: 10px;
+    span {
+      &:hover {
+        background-color: none;
+      }
+    }
   }
 `;

@@ -91,8 +91,6 @@ a {
   color: white;
 }
 
-
-
 .iconSize {
   font-size: 2rem;
   display: flex;
@@ -293,7 +291,6 @@ ul {
   .skillIcon2 {
     margin-left: 2%;
   }
- 
 
   /* .cardLayout {
     grid-template-columns: 1fr 1fr;
