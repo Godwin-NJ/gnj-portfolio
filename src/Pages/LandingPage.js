@@ -81,8 +81,8 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -5%;
-    padding-top: 5%;
+    /* margin-top: -5%; */
+    /* padding-top: 5%; */
     /* justify-content: center; */
   }
   .circular-image {
@@ -101,7 +101,7 @@ const Wrapper = styled.div`
 
     h4 {
       /* font-size: 25px; */
-      font-size: 43px;
+      font-size: 30px;
     }
     .description {
       /* width: 70%; */
@@ -125,5 +125,12 @@ const Wrapper = styled.div`
   }
   .socialContact {
     display: flex;
+  }
+  @media (max-width: 480px) {
+    .about1 {
+      h4 {
+        font-size: 25px;
+      }
+    }
   }
 `;

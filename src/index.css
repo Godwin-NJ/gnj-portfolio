@@ -38,14 +38,7 @@ h5 {
   font-size: 20px;
   letter-spacing: 2px;
 }
-/* .about1 {
-  width: 85vw;
-} */
 
-.pageDistanceFromTopMenu {
-  margin-top: 7%;
-  /* margin-bottom: 3%; */
-}
 .prjtTitle {
   color: #b72d17;
 }
@@ -62,14 +55,6 @@ h5 {
   margin-left: 5%;
 }
 
-.icon {
-  align-self: flex-end;
-  position: absolute;
-  cursor: pointer;
-  font-size: 27px;
-  border-color: transparent;
-  background: transparent;
-}
 .techList-li {
   border-radius: 5px;
   border: 1px solid black;
@@ -83,9 +68,7 @@ h5 {
   font-size: 5px;
 }
 
-.showNav {
-  height: 7rem;
-}
+
 a {
   text-decoration: none;
   color: white;
@@ -179,131 +162,4 @@ ul {
   width: 300px;
   margin-left: 2px;
   margin-top: -10px;
-}
-
-/* .prjtTempt {
-  margin: 5%;
-} */
-
-/* .footerStyle {
-  text-align: center;
-}
-.footerStyle > p {
-  width: 350px;
-  margin: 0 auto;
-} */
-
-/* to make horizontal scroll enabled for small devices */
-@media (max-width: 600px) {
-  .skillIcon2 {
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-  }
-  .cardBuilt {
-    width: 300px;
-  }
-}
-
-@media (min-width: 722px) {
-  /* .about1 {
-    max-width: 65%;
-  } */
-}
-
-/* Tablet-reponsive design */
-@media (min-width: 768px) {
-  .icon {
-    display: none;
-  }
-  /* .navAnker {
-    margin-top: -28px;
-  } */
-
-  /* .cardBuilt:hover {
-    width: 320px;
-    height: 60%;
-    margin: 10px 0px 0px 10px;
-  } */
-
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    column-gap: 10px;
-    row-gap: 10px;
-  }
-  .profileAbout {
-    width: 85%;
-  }
-
-  /* .about {
-    margin-top: 7%;
-  } */
-  /* .navbar-brand {
-    margin: -1px;
-  } */
-}
-
-@media (min-width: 992px) {
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-    column-gap: 10px;
-    grid-row-gap: 10px;
-    row-gap: 10px;
-  }
-
-  /* .cardProject {
-    margin-top: 5%;
-  } */
-  .profileAbout {
-    width: 60vw;
-  }
-  .houseDiv {
-    width: 90vw;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* .cardBuilt:hover {
-    width: 450px;
-    height: 35vh;
-    margin: 20px;
-  } */
-  .cardBuilt {
-    width: 450px;
-  }
-  .houseDiv {
-    width: 80vw;
-  }
-  /* .about1 {
-    max-width: 40%;
-  } */
-
-  /* .circular-image {
-    margin-top: 7%;
-    margin-left: 5%;
-  } */
-  .profileAbout {
-    width: 55%;
-  }
-  .skillIcon2 {
-    margin-left: 2%;
-  }
-
-  /* .cardLayout {
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2%;
-    margin: 2%;
-    gap: 50px;
-    width: 70%;
-  } */
-  /* .cardBuilt:hover {
-    height: 100%;
-  } */
-  /* .btnProject {
-    margin-left: 40%;
-    margin-top: 5%;
-  } */
 }

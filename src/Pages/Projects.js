@@ -45,6 +45,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-wrap: wrap;
     /* gap: 5px; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
   }
 `;

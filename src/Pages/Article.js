@@ -7,17 +7,49 @@ const Article = () => {
     <Wrapper>
       <section className="articlePage">
         <ProjectCard
-          title="Inventory Management API  "
+          isArticle
+          title="Inventory Management API "
           projectImage={SpotifyImage}
           imageAlt={"Inventory"}
-          textContent="Small Scale Inventory Management API. 
-              Built with express Js and mongoDb,  docker container technology fully utilized.
-              Authentication and authorization fully setup
-              "
+          textContent="Small Scale Inventory Management API."
           projectUrlPath={
             "https://godwinamadi-nj.hashnode.dev/build-and-dockerize-a-node-js-inventory-app"
           }
-          technologyUsed={[
+          technologiesUsed={[
+            "Node JS",
+            "MongoDb",
+            "authentication",
+            "docker",
+            "authorization",
+          ]}
+        />
+        <ProjectCard
+          isArticle
+          title="Inventory Management API "
+          projectImage={SpotifyImage}
+          imageAlt={"Inventory"}
+          textContent="Small Scale Inventory Management API."
+          projectUrlPath={
+            "https://godwinamadi-nj.hashnode.dev/build-and-dockerize-a-node-js-inventory-app"
+          }
+          technologiesUsed={[
+            "Node JS",
+            "MongoDb",
+            "authentication",
+            "docker",
+            "authorization",
+          ]}
+        />
+        <ProjectCard
+          isArticle
+          title="Inventory Management API "
+          projectImage={SpotifyImage}
+          imageAlt={"Inventory"}
+          textContent="Small Scale Inventory Management API."
+          projectUrlPath={
+            "https://godwinamadi-nj.hashnode.dev/build-and-dockerize-a-node-js-inventory-app"
+          }
+          technologiesUsed={[
             "Node JS",
             "MongoDb",
             "authentication",
@@ -34,7 +66,16 @@ export default Article;
 
 const Wrapper = styled.section`
   .articlePage {
-    /* margin-top: 10%; */
-    /* padding-bottom: 20.5rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  @media (max-width: 768px) {
+    .articlePage {
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* justify-content: center; */
+      /* align-items: center; */
+    }
   }
 `;

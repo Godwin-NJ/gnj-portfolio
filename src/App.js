@@ -43,8 +43,16 @@ const Wrapper = styled.section`
     flex-direction: column;
   }
   .content {
-    /* margin-bottom: 5%; */
-    /* height: 80vh; */
+    padding-top: 54px;
+    position: relative;
     padding-bottom: 10%;
+    margin-bottom: 5%;
+  }
+
+  @media (max-width: 480px) {
+    .content {
+      padding-bottom: 15%;
+      margin-bottom: 10%;
+    }
   }
 `;

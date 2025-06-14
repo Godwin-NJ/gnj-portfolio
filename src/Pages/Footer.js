@@ -15,7 +15,7 @@ const Footer = () => {
         <article className="footerStyle">
           <div className="footerContainer">
             <section className="userFooter-info">
-              <p>@ Reach Out to me !</p>
+              <p>Reach Out to me !</p>
             </section>
             <section className="footerIcon">
               <span>
@@ -59,16 +59,18 @@ const Wrapper = styled.section`
     width: 100%;
     /* max-width: 100rem; */
     position: absolute;
-    padding: 10px;
+    /* padding: 10px; */
     /* left: 0px; */
     bottom: 0px;
     /* margin-top: 20%; */
   }
   .footerContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 30px;
-    padding: 10px;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
     .userFooter-info {
       opacity: 0.7;
       &:hover {

@@ -4,6 +4,7 @@ import { ImBooks } from "react-icons/im";
 import SocialIcon from "./SocialIcon";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLink } from "react-icons/fa";
+import { FaPenClip } from "react-icons/fa6";
 
 //note below types to be passed as props
 /* interface projectProps {
@@ -17,6 +18,7 @@ technologiesUsed : string[]
 const ProjectCard = (props) => {
   const {
     title,
+    isArticle = false,
     ProjectIcon,
     projectIconColor,
     textContent,
@@ -37,7 +39,9 @@ const ProjectCard = (props) => {
           <span>
             <ImBooks className="defaultIcon" />
           </span>
-          <p className="titleOfProject">{title}</p>
+          <p className="titleOfProject">
+            {title} {isArticle ? <FaPenClip /> : ""}
+          </p>
         </header>
         <div className="contentLayout">
           <div className="projectInfo">
@@ -92,7 +96,7 @@ const Wrapper = styled.a`
   box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
   margin: 10px;
   width: 550px;
-  max-width: 550px;
+  max-width: 450px;
   max-height: 75vh;
   overflow: auto;
   padding: 10px;
@@ -154,5 +158,10 @@ const Wrapper = styled.a`
         background-color: none;
       }
     }
+  }
+
+  @media (max-width: 480px) {
+    width: 410px;
+    max-width: 420px;
   }
 `;

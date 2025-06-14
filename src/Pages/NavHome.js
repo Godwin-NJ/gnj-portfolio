@@ -16,13 +16,18 @@ const NavHome = ({ navToggle, isNavOpen }) => {
               </Link>
             </div>
             {/*Start --> Hamburger icon for smaller screen */}
-            <button className="icon" onClick={navToggle}>
-              <a href="/" style={{ color: "#fffcfc", fontWeigth: "300" }}>
+            <button className="icon " onClick={navToggle}>
+              <a
+                href="/"
+                // style={{ color: "#fffcfc", fontWeigth: "300" }}
+                style={{ color: "#fffcfc", fontSize: "20" }}
+                className="animate"
+              >
                 <AiOutlineAlignLeft />
               </a>
             </button>
             {/*End --> Hamburger icon for smaller screen */}
-            <nav className={`${isNavOpen ? "navInfo showNav" : "navInfo"}`}>
+            <nav className={`${isNavOpen ? "navInfo showNav " : "navInfo"}`}>
               {/* <Link className="navAnker navbar-brand" to="/about"></Link> */}
               <Link className="navAnker" to="/projects">
                 Projects
@@ -63,8 +68,8 @@ const Wrapper = styled.section`
     font-weight: 700;
   }
   main.relativeToNav {
-    position: relative;
-    min-height: 5vh;
+    /* position: relative; */
+    height: 70px;
     background: black;
     position: fixed;
     top: 0;
@@ -107,32 +112,85 @@ const Wrapper = styled.section`
   }
 
   .navInfo {
+    overflow: visible;
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-
-    a {
-      /* transition: opacity 0.35s ease-in-out; */
-    }
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 20px;
+    /* margin-top: 0.3%;s */
+  }
+  .icon {
+    align-self: flex-start;
+    position: absolute;
+    cursor: pointer;
+    font-size: 27px;
+    border-color: transparent;
+    background: transparent;
+    display: none;
   }
 
-  @media (min-width: 768px) {
+  /* this was used to bring up the toggle icon */
+  /* @media (min-width: 768px) {
     .navInfo {
-      /* height: auto !important; */
       overflow: visible;
       display: flex;
       flex-direction: row;
       gap: 15px;
       margin-left: 20px;
       margin-top: 0.3%;
-      /* justify-content: space-evenly; */
-      /* padding: 5px; */
     }
-  }
+  } */
 
   @media (min-width: 768px) {
     .navAnker {
-      /* margin-top: -28px; */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .icon {
+      display: flex;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-around; */
+      /* padding: 5px; */
+      /* padding-left: 30px; */
+      .navGNJ {
+        margin-left: 10%;
+      }
+    }
+    .navInfo {
+      /* overflow: visible; */
+      display: flex;
+      flex-direction: column;
+      /* gap: 15px; */
+      margin-left: 10%;
+      margin-top: 3%;
+      display: none;
+    }
+    .showNav {
+      display: flex;
+      /* height: 7rem; */
+    }
+
+    .animate {
+      animation: pulse-size 8s infinite linear;
+    }
+
+    @keyframes pulse-size {
+      0% {
+        /* width: 100px; */
+        font-size: 30px;
+      }
+      50% {
+        /* width: 200px; */
+        font-size: 25px;
+      }
+      100% {
+        /* width: 100px; */
+        font-size: 30px;
+      }
     }
   }
 `;

@@ -84,7 +84,7 @@ export default Built;
 
 const Wrapper = styled.section`
   /* position: relative; */
-  margin-top: 1%;
+  margin-top: 3%;
   /* height: 100%; */
   .prjtTemp {
   }
@@ -121,17 +121,5 @@ const Wrapper = styled.section`
       box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
     }
     /* margin-left: 18%; */
-  }
-
-  @media (min-width: 840px) {
-    /* .cardLayout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0%;
-  } */
-    /* .cardBuilt:hover {
-    transform: scale(1.1);
-    height: 100%;
-  } */
   }
 `;
