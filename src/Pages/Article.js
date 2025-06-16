@@ -36,8 +36,9 @@ const Wrapper = styled.section`
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .articlePage {
+      justify-content: flex-start;
       /* display: flex; */
       /* flex-direction: column; */
       /* justify-content: center; */

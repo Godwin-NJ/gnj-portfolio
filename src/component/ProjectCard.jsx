@@ -109,18 +109,18 @@ const Wrapper = styled.a`
   }
   header {
     display: flex;
-    padding: 10px;
-    padding-left: 15px;
+    /* padding: 10px; */
+    /* padding-left: 15px; */
     .defaultIcon {
-      font-size: 30px;
+      font-size: 20px;
     }
   }
   .titleOfProject {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
   }
   .textContent {
-    font-size: 20px;
+    /* font-size: 20px; */
     opacity: 0.6;
     /* height: 115px; */
     overflow: hidden;
@@ -140,7 +140,7 @@ const Wrapper = styled.a`
   .contentLayout {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    /* gap: 7px; */
   }
   .projectIcon {
     color: ${(props) => props.$projectIconColor};
@@ -148,7 +148,7 @@ const Wrapper = styled.a`
   }
   .projectInfo {
     display: flex;
-    padding: 10px;
+    /* padding: 10px; */
   }
   .projectLinks {
     display: flex;

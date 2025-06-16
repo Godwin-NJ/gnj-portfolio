@@ -97,6 +97,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    text-align: center;
     /* padding: 5vw 3vw 6vw; */
 
     h4 {
@@ -106,7 +107,7 @@ const Wrapper = styled.div`
     .description {
       /* width: 70%; */
       opacity: 0.8;
-      font-size: 20px;
+      /* font-size: 20px; */
     }
     .actionAbout {
       display: flex;

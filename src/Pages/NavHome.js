@@ -94,7 +94,7 @@ const Wrapper = styled.section`
     flex-direction: row;
     /* justify-content: space-around; */
     padding: 5px;
-    padding-left: 30px;
+    padding-left: 0px;
     Link.navGNJ {
       margin-left: 4%;
     }

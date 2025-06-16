@@ -83,7 +83,7 @@ const Wrapper = styled.section`
       display: flex;
       flex-direction: row;
       gap: 15px;
-      font-size: 25px;
+      /* font-size: 25px; */
       margin-top: -5px;
       a {
         opacity: 0.7;
@@ -93,8 +93,9 @@ const Wrapper = styled.section`
         }
       }
       .emailAdd {
-        font-size: 20px;
+        /* font-size: 20px; */
         opacity: 0.9;
+        padding-top: 6px;
       }
     }
   }

@@ -93,7 +93,7 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
   }
   .cardLayout {
     /* width: 100%; */
