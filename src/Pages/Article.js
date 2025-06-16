@@ -23,40 +23,6 @@ const Article = () => {
             "authorization",
           ]}
         />
-        <ProjectCard
-          isArticle
-          title="Inventory Management API "
-          projectImage={SpotifyImage}
-          imageAlt={"Inventory"}
-          textContent="Small Scale Inventory Management API."
-          projectUrlPath={
-            "https://godwinamadi-nj.hashnode.dev/build-and-dockerize-a-node-js-inventory-app"
-          }
-          technologiesUsed={[
-            "Node JS",
-            "MongoDb",
-            "authentication",
-            "docker",
-            "authorization",
-          ]}
-        />
-        <ProjectCard
-          isArticle
-          title="Inventory Management API "
-          projectImage={SpotifyImage}
-          imageAlt={"Inventory"}
-          textContent="Small Scale Inventory Management API."
-          projectUrlPath={
-            "https://godwinamadi-nj.hashnode.dev/build-and-dockerize-a-node-js-inventory-app"
-          }
-          technologiesUsed={[
-            "Node JS",
-            "MongoDb",
-            "authentication",
-            "docker",
-            "authorization",
-          ]}
-        />
       </section>
     </Wrapper>
   );
