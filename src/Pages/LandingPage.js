@@ -31,7 +31,13 @@ const LandingPage = () => {
           <p className="description">
             I build solutions for Individuals and Enterprise.
           </p>
-          <p className="actionAbout">Build. Improve. Web. API. Write</p>
+          <p className="actionAbout">
+            <span>Build-</span>
+            <span>Improve-</span>
+            <span>Web-</span>
+            <span>API-</span>
+            <span>Write</span>
+          </p>
           <div className="socialContact">
             <SocialIcon
               href="http://twitter.com/godwin_nj"
@@ -116,6 +122,9 @@ const Wrapper = styled.div`
       text-transform: uppercase;
       font-size: 13px;
       opacity: 0.9;
+      span {
+        color: #00ffff;
+      }
       /* color: #fff; */
     }
   }
