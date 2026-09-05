@@ -143,7 +143,7 @@ const Wrapper = styled.div`
     .my-header {
       font-size: 19px;
       font-weight: 90;
-      opacity: 0.9;
+      /* opacity: 1; */
     }
     .description {
       display: flex;
