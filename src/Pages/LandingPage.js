@@ -142,8 +142,8 @@ const Wrapper = styled.div`
     }
     .my-header {
       font-size: 19px;
-      font-weight: 150;
-      /* opacity: 1; */
+      font-weight: 400;
+      opacity: 0.8;
     }
     .description {
       display: flex;
