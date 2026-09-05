@@ -1,23 +1,34 @@
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiFillMail,
+  // AiFillMail,
   AiFillTwitterCircle,
 } from "react-icons/ai";
-import { BiCaretDown } from "react-icons/bi";
+// import { BiCaretDown } from "react-icons/bi";
 import styled from "styled-components";
 import SocialIcon from "../component/SocialIcon";
+import { FaRegCopyright } from "react-icons/fa6";
 
 const Footer = () => {
+  const currentDate = new Date().getFullYear();
+
   return (
     <Wrapper>
       <footer>
         <article className="footerStyle">
           <div className="footerContainer">
             <section className="userFooter-info">
-              <p>Reach Out to me !</p>
+              <span style={{ fontSize: "20px", paddingTop: "0px" }}>
+                <FaRegCopyright />
+              </span>
+              <p>{currentDate}</p>
+              <p>Godwin Amadi</p>
             </section>
+
             <section className="footerIcon">
+              <span className="emailAdd">
+                <p>amadigodwin7@gmail.com</p>
+              </span>
               <span>
                 <SocialIcon
                   href="https://github.com/Godwin-NJ"
@@ -38,9 +49,6 @@ const Footer = () => {
                   alt="Twitter"
                   ReactIcon={AiFillTwitterCircle}
                 />
-              </span>
-              <span className="emailAdd">
-                <p>amadigodwin7@gmail.com</p>
               </span>
             </section>
           </div>
@@ -66,12 +74,14 @@ const Wrapper = styled.section`
   }
   .footerContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
     gap: 5px;
-    padding: 5px;
+    padding: 10px;
     .userFooter-info {
+      display: flex;
+      gap: 5px;
       opacity: 0.7;
       &:hover {
         opacity: 0.9;
@@ -82,7 +92,7 @@ const Wrapper = styled.section`
     .footerIcon {
       display: flex;
       flex-direction: row;
-      gap: 15px;
+      gap: 5px;
       /* font-size: 25px; */
       margin-top: -5px;
       a {
@@ -97,6 +107,15 @@ const Wrapper = styled.section`
         opacity: 0.9;
         padding-top: 6px;
       }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footerContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 `;

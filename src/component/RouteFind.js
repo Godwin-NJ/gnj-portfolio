@@ -12,7 +12,7 @@ const RouteFind = ({ isUserAuthenticated }) => {
     <Switch>
       <Route exact path="/" component={LandingPage}></Route>
       {/* <Route exact path="/about" component={About}></Route> */}
-      <Route path="/about" component={About}></Route>
+      <Route path="/techstack" component={About}></Route>
       <Route path="/projects" component={Projects}></Route>
       <Route path="/articles" component={Article}></Route>
     </Switch>

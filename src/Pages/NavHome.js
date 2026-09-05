@@ -29,16 +29,16 @@ const NavHome = ({ navToggle, isNavOpen }) => {
             {/*End --> Hamburger icon for smaller screen */}
             <nav className={`${isNavOpen ? "navInfo showNav " : "navInfo"}`}>
               {/* <Link className="navAnker navbar-brand" to="/about"></Link> */}
-              <Link className="navAnker" to="/projects">
+              {/* <Link className="navAnker" to="/projects">
                 Projects
-              </Link>
+              </Link> */}
               {/* <a className="navAnker" href='/#'>Contact</a> */}
 
-              <Link className="navAnker" to="/articles">
+              {/* <Link className="navAnker" to="/articles">
                 Blog
-              </Link>
-              <Link className="navAnker" to="/about">
-                About
+              </Link> */}
+              <Link className="navAnker" to="/techstack">
+                Tech Stack
               </Link>
               {/* <a
                 className="navAnker"
@@ -102,11 +102,11 @@ const Wrapper = styled.section`
   .navAnker {
     text-decoration: none;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: Capitalize;
     opacity: 0.8;
-    font-size: 14px;
+    font-size: 16px;
     &:hover {
-      opacity: 1;
+      /* opacity: 1; */
       text-decoration: underline;
     }
   }

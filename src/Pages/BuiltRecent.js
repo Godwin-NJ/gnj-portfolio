@@ -8,7 +8,7 @@ const Built = () => {
   return (
     <Wrapper className="prjtTemp">
       <h6 className="spotlight-info">
-        Spotlight Articles & PROJECTS
+        Featured Articles & PROJECTS
         {/* -<AiOutlineSetting /> */}
         {/* <AiTwotoneTool /> BELOW */}
       </h6>
@@ -71,11 +71,11 @@ const Built = () => {
         </ul>
       </div>
 
-      <button className="btnProject">
+      {/* <button className="btnProject">
         <Link to="/projects" style={{ textDecoration: "none", color: "white" }}>
           See More
         </Link>
-      </button>
+      </button> */}
     </Wrapper>
   );
 };

@@ -37,4 +37,13 @@ const Wrapper = styled.div`
       box-shadow: 1px 1px 3px 3px #d2e8f5;
     }
   }
+
+  @media (max-width: 480px) {
+    .socialIcon {
+      /* color: ${(props) => props.$iconColor}; */
+      /* display: flex; */
+      font-size: 18px;
+      /* gap: 5px; */
+    }
+  }
 `;
