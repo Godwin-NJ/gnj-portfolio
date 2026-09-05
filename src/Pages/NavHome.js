@@ -175,7 +175,7 @@ const Wrapper = styled.section`
     }
 
     .animate {
-      animation: pulse-size 8s infinite linear;
+      /* animation: pulse-size 8s infinite linear; */
     }
 
     @keyframes pulse-size {

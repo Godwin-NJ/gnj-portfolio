@@ -143,13 +143,13 @@ const Wrapper = styled.div`
     .my-header {
       font-size: 19px;
       font-weight: 90;
-      opacity: 0.75;
+      opacity: 0.9;
     }
     .description {
       display: flex;
       gap: 10px;
       /* width: 70%; */
-      opacity: 0.7;
+      opacity: 0.8;
       /* font-size: 20px; */
       .mail-icon {
         font-size: 21px;
