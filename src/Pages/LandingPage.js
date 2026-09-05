@@ -142,7 +142,7 @@ const Wrapper = styled.div`
     }
     .my-header {
       font-size: 19px;
-      font-weight: 400;
+      font-weight: 200;
       opacity: 0.8;
     }
     .description {
@@ -185,8 +185,8 @@ const Wrapper = styled.div`
       }
       .my-header {
         font-size: 14px;
-        font-weight: 70;
-        /* opacity: 0.75; */
+        /* font-weight: 200; */
+        /* opacity: 0.7; */
       }
       .description {
         font-size: 13px;
